@@ -81,4 +81,13 @@ fn loops() {
         }
         println!("Hello: {}", cnt_while);
     }
+
+    println!("-----");
+    // for: ループ
+    for cnt_for in 0..10 {
+        if cnt_for % 2 == 0 {
+            continue;
+        }
+        println!("Hello: {}", cnt_for);
+    }
 }
