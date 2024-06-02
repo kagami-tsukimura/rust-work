@@ -70,6 +70,7 @@ fn print_type() {
 
     println!("a: {} b: {} c: {} d: {} e: {} f: {}", a, b, c, d, e, f);
 
+    println!("-----");
     // 論理型
     let g = true;
     let h = false;
@@ -82,4 +83,12 @@ fn print_type() {
     println!("k(g || h): {}", k);
     let x = 1 < 2;
     println!("x(1 < 2): {}", x);
+
+    println!("-----");
+    // タプル型
+    let t1 = (1, true, 2.0);
+    let t2 = (2.0, 1, true);
+    // {:?}: デバッグフォーマット
+    println!("{:?}", t1);
+    println!("{:?}", t2);
 }
