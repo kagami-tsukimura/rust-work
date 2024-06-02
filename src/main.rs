@@ -97,4 +97,8 @@ fn print_type() {
 
     let (x, _, z) = t2;
     println!("x: {} z: {}", x, z);
+
+    // ユニット型
+    let u: () = ();
+    println!("{:?}", u);
 }
