@@ -100,6 +100,6 @@ fn loops() {
     println!("-----");
     let r = 1..10;
     for i in r {
-        println!("{}", i)
+        println!("{}", i * i);
     }
 }
