@@ -6,6 +6,7 @@ fn main() {
     print_variable();
     print_constant();
     print_type();
+    print_array();
 }
 
 fn print_msg() {
@@ -101,4 +102,39 @@ fn print_type() {
     // ユニット型
     let u: () = ();
     println!("{:?}", u);
+}
+
+fn print_array() {
+    println!("-----");
+    // 配列: 要素数固定（要素数を可変にする場合はベクタ型）
+    let a = [1, 2, 3];
+    println!("{:?}", a);
+
+    let b = [0; 1000];
+    // println!("{:?}", b);
+
+    let c = &b[990..];
+    println!("{:?}", c);
+
+    println!("-----");
+    // ベクタ型: 要素数可変
+    let mut v = Vec::new();
+    v.push(1);
+    v.push(2);
+    v.push(3);
+    v.push(3);
+    println!("before_v: {:?}", v);
+    let x = v.pop();
+    println!("pop_v: {:?}", x);
+    println!("after_v: {:?}", v);
+
+    let v2 = vec![4, 5, 6];
+    println!("{:?}", v2);
+
+    let y = v[1];
+    println!("y: {}", y);
+    let z = v.get(0);
+    println!("z: {:?}", z);
+    let s = &v[0..2];
+    println!("s: {:?}", s);
 }
