@@ -59,6 +59,7 @@ fn matches() {
 
 fn loops() {
     println!("-----");
+    // loop: 無限ループ
     let mut x = 0;
     loop {
         x += 1;
