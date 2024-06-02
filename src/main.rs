@@ -1,9 +1,18 @@
+// 定数: グローバルに記述可能
+const B: i32 = 10;
+
 fn main() {
     print_msg();
     print_variable();
+
+    println!("-----");
+    const A: i32 = 1;
+    println!("Local: {}", A);
+    println!("Global: {}", B);
 }
 
 fn print_msg() {
+    println!("-----");
     println!("Hello, world!");
     println!("Hello, {}!", "world");
     /*
@@ -13,10 +22,11 @@ fn print_msg() {
      */
     // 改行なし
     print!("Hello, ");
-    print!("Rust");
+    println!("Rust");
 }
 
 fn print_variable() {
+    println!("-----");
     // 書き換えng
     let a: i32 = 1;
     println!("{}", a);
