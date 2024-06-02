@@ -94,4 +94,7 @@ fn print_type() {
 
     let i = t1.0;
     println!("i: {}", i);
+
+    let (x, _, z) = t2;
+    println!("x: {} z: {}", x, z);
 }
