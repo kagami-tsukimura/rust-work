@@ -60,14 +60,25 @@ fn matches() {
 fn loops() {
     println!("-----");
     // loop: 無限ループ
-    let mut cnt = 0;
+    let mut cnt_loop = 0;
     loop {
-        cnt += 1;
-        if cnt > 10 {
+        cnt_loop += 1;
+        if cnt_loop > 10 {
             break;
-        } else if cnt % 2 == 0 {
+        } else if cnt_loop % 2 == 0 {
             continue;
         }
-        println!("Hello: {}", cnt);
+        println!("Hello: {}", cnt_loop);
+    }
+
+    println!("-----");
+    // while: 条件付きループ
+    let mut cnt_while = 0;
+    while cnt_while < 10 {
+        cnt_while += 1;
+        if cnt_while % 2 == 0 {
+            continue;
+        }
+        println!("Hello: {}", cnt_while);
     }
 }
