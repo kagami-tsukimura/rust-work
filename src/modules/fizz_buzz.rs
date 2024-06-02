@@ -43,7 +43,7 @@ fn fizbuzz_match(count: i32) {
             (0, 0) => println!("FizzBuzz"),
             (0, _) => println!("Fizz"),
             (_, 0) => println!("Buzz"),
-            (_, _) => println!("{}", i),
+            _ => println!("{}", i),
         }
     }
 }
