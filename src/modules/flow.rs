@@ -1,9 +1,10 @@
 pub fn main() {
-    sentence();
-    branch();
+    sentences();
+    branches();
+    matches();
 }
 
-fn sentence() {
+fn sentences() {
     println!("-----");
     {
         let x = 1;
@@ -26,7 +27,7 @@ fn sentence() {
     println!("{}", z);
 }
 
-fn branch() {
+fn branches() {
     println!("-----");
     let x = -1;
 
@@ -38,4 +39,16 @@ fn branch() {
 
     let y = if x > 10 { x } else { 0 };
     println!("y: {}", y);
+}
+
+fn matches() {
+    println!("-----");
+    // let x = 1;
+    // let x = 2;
+    let x = 3;
+    match x {
+        1 => println!("1"),
+        2 => println!("2"),
+        _ => println!("other"),
+    }
 }
