@@ -1,8 +1,8 @@
 pub fn main() {
-    Sentence();
+    sentence();
 }
 
-fn Sentence() {
+fn sentence() {
     println!("-----");
     println!("Hello, sentences!");
 }
