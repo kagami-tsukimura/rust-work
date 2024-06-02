@@ -7,6 +7,7 @@ fn main() {
     print_constant();
     print_type();
     print_array();
+    print_letter();
 }
 
 fn print_msg() {
@@ -137,4 +138,19 @@ fn print_array() {
     println!("z: {:?}", z);
     let s = &v[0..2];
     println!("s: {:?}", s);
+}
+
+fn print_letter() {
+    println!("-----");
+    let a = 'a';
+    println!("{}", a);
+
+    // 文字列リテラル: 変更不可
+    let b = "Rust";
+    println!("{}", b);
+
+    // String: 変更可
+    let mut b_str = "Rust".to_string();
+    b_str = String::from("Python");
+    println!("{}", b_str);
 }
