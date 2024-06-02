@@ -30,9 +30,9 @@ fn branch() {
     println!("-----");
     let x = -1;
 
-    if x > 0 {
-        println!("{} > 0", x);
+    if x > 0 && x < 10 {
+        println!("1: {} > 0 && {} < 10", x, x);
     } else {
-        println!("{} <= 0", x);
+        println!("2: {} > 0 || {} < 10", x, x);
     }
 }
