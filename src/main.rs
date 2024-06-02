@@ -8,6 +8,7 @@ fn main() {
     print_type();
     print_array();
     print_letter();
+    func_hello();
 }
 
 fn print_msg() {
@@ -158,4 +159,12 @@ fn print_letter() {
     println!("{}", b_str + b);
     // // 文字列 + String: コンパイルエラー
     // println!("{}", b + b_str);
+}
+
+fn func_hello() {
+    println!("-----");
+    fn hello() {
+        println!("Hello, world!");
+    }
+    hello();
 }
