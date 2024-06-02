@@ -106,7 +106,7 @@ fn print_type() {
 
 fn print_array() {
     println!("-----");
-    // 配列: 要素数固定（要素数を可変にする場合はVec）
+    // 配列: 要素数固定（要素数を可変にする場合はベクタ型）
     let a = [1, 2, 3];
     println!("{:?}", a);
 
@@ -115,4 +115,12 @@ fn print_array() {
 
     let c = &b[990..];
     println!("{:?}", c);
+
+    println!("-----");
+    // ベクタ型: 要素数可変
+    let mut v = Vec::new();
+    v.push(1);
+    v.push(2);
+    v.push(3);
+    println!("{:?}", v);
 }
