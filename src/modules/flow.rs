@@ -83,7 +83,7 @@ fn loops() {
     }
 
     println!("-----");
-    // for: ループ
+    // for: 範囲内ループ
     for cnt_for in 0..10 {
         if cnt_for % 2 == 0 {
             continue;
