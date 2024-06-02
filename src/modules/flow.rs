@@ -2,6 +2,7 @@ pub fn main() {
     sentences();
     branches();
     matches();
+    loops();
 }
 
 fn sentences() {
@@ -53,5 +54,17 @@ fn matches() {
             println!("2-2");
         }
         _ => println!("other"),
+    }
+}
+
+fn loops() {
+    println!("-----");
+    let mut x = 0;
+    loop {
+        if x > 10 {
+            break;
+        }
+        println!("{}", x);
+        x += 1;
     }
 }
