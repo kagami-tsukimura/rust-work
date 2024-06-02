@@ -1,8 +1,6 @@
 pub fn main(count: i32) {
     fizzbuzz_for(count);
-    println!("-----");
     fizbuzz_while(count);
-    println!("-----");
     fizbuzz_match(count);
 }
 
