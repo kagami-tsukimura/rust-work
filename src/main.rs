@@ -122,6 +122,7 @@ fn print_array() {
     v.push(1);
     v.push(2);
     v.push(3);
+    v.push(3);
     println!("{:?}", v);
 
     let v2 = vec![4, 5, 6];
