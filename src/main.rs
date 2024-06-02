@@ -9,8 +9,7 @@ fn main() {
     print_array();
     print_letter();
     func_hello();
-    let result = func_add(32, 10);
-    println!("{}", result)
+    println!("{}", func_add(32, 10));
 }
 
 fn print_msg() {
