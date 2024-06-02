@@ -123,7 +123,10 @@ fn print_array() {
     v.push(2);
     v.push(3);
     v.push(3);
-    println!("{:?}", v);
+    println!("before_v: {:?}", v);
+    let x = v.pop();
+    println!("pop_v: {:?}", x);
+    println!("after_v: {:?}", v);
 
     let v2 = vec![4, 5, 6];
     println!("{:?}", v2);
