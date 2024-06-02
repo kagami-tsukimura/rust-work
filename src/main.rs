@@ -5,7 +5,7 @@ fn main() {
     print_msg();
     print_variable();
     print_constant();
-    println!("-----");
+    print_type();
 }
 
 fn print_msg() {
@@ -49,4 +49,37 @@ fn print_constant() {
     const A: i32 = 1;
     println!("Local: {}", A);
     println!("Global: {}", B);
+}
+
+fn print_type() {
+    println!("-----");
+    // 数値型
+    let a = 1;
+    let b = 2.0;
+
+    let c: u16 = 3;
+    let d = 4.0f32;
+
+    let e = 1 + 2;
+    // let e = 1 - 2;
+    // let e = 1 * 2;
+    // let e = 1 / 2;
+    // let e = 1 % 2;
+
+    let f = 1 as f64 + 2.0;
+
+    println!("a: {} b: {} c: {} d: {} e: {} f: {}", a, b, c, d, e, f);
+
+    // 論理型
+    let g = true;
+    let h = false;
+    println!("g: {} h: {}", g, h);
+    let i = !g;
+    println!("i(!g): {}", i);
+    let j = g && h;
+    println!("j(g && h): {}", j);
+    let k = g || h;
+    println!("k(g || h): {}", k);
+    let x = 1 < 2;
+    println!("x(1 < 2): {}", x);
 }
