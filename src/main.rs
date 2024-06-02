@@ -113,6 +113,6 @@ fn print_array() {
     let b = [0; 1000];
     // println!("{:?}", b);
 
-    let c = &b[0..2];
+    let c = &b[990..];
     println!("{:?}", c);
 }
