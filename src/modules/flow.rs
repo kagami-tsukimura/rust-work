@@ -96,4 +96,10 @@ fn loops() {
     for i in items {
         println!("{}", i)
     }
+
+    println!("-----");
+    let r = 1..10;
+    for i in r {
+        println!("{}", i)
+    }
 }
