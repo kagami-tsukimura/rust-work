@@ -91,4 +91,7 @@ fn print_type() {
     // {:?}: デバッグフォーマット
     println!("{:?}", t1);
     println!("{:?}", t2);
+
+    let i = t1.0;
+    println!("i: {}", i);
 }
