@@ -28,12 +28,11 @@ fn sentence() {
 
 fn branch() {
     println!("-----");
-    let x = 1;
-    if x == 1 {
-        println!("x == 1");
-    } else if x == 2 {
-        println!("x == 2");
+    let x = -1;
+
+    if x > 0 {
+        println!("{} > 0", x);
     } else {
-        println!("x != 1 && x != 2");
+        println!("{} <= 0", x);
     }
 }
