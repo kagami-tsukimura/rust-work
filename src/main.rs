@@ -1,4 +1,8 @@
 fn main() {
+    print_msg();
+}
+
+fn print_msg() {
     println!("Hello, world!");
     println!("Hello, {}!", "world");
     /*
