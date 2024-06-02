@@ -2,6 +2,8 @@ pub fn main(count: i32) {
     fizzbuzz_for(count);
     println!("-----");
     fizbuzz_while(count);
+    println!("-----");
+    fizbuzz_match(count);
 }
 
 fn fizzbuzz_for(count: i32) {
@@ -31,5 +33,16 @@ fn fizbuzz_while(count: i32) {
             println!("{}", i)
         }
         i += 1;
+    }
+}
+
+fn fizbuzz_match(count: i32) {
+    for i in 1..=count {
+        match (i % 3, i % 5) {
+            (0, 0) => println!("FizzBuzz"),
+            (0, _) => println!("Fizz"),
+            (_, 0) => println!("Buzz"),
+            (_, _) => println!("{}", i),
+        }
     }
 }
