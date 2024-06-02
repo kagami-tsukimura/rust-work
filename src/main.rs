@@ -8,6 +8,8 @@ fn main() {
     print_type();
     print_array();
     print_letter();
+    func_hello();
+    println!("{}", func_add(32, 10));
 }
 
 fn print_msg() {
@@ -158,4 +160,18 @@ fn print_letter() {
     println!("{}", b_str + b);
     // // 文字列 + String: コンパイルエラー
     // println!("{}", b + b_str);
+}
+
+fn func_hello() {
+    println!("-----");
+    fn hello() {
+        println!("Hello, world!");
+    }
+    hello();
+}
+
+fn func_add(a: i32, b: i32) -> i32 {
+    // （return a + b;でも可）
+    // 最終行の値を戻り値とする書き方が一般的
+    a + b
 }
