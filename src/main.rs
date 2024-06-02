@@ -7,5 +7,5 @@ mod modules {
 fn main() {
     // modules::basic::main();
     // modules::flow::main();
-    modules::fizz_buzz::main();
+    modules::fizz_buzz::main(20);
 }

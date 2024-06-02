@@ -1,5 +1,5 @@
-pub fn main() {
-    fizzbuzz(20);
+pub fn main(count: i32) {
+    fizzbuzz(count);
 }
 
 fn fizzbuzz(count: i32) {
