@@ -1,5 +1,5 @@
 pub fn main() {
-    fizz_bazz();
+    fizzbuzz();
 }
 
-fn fizz_bazz() {}
+fn fizzbuzz() {}
