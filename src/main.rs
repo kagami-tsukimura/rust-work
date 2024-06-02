@@ -6,6 +6,7 @@ fn main() {
     print_variable();
     print_constant();
     print_type();
+    print_array();
 }
 
 fn print_msg() {
@@ -101,4 +102,10 @@ fn print_type() {
     // ユニット型
     let u: () = ();
     println!("{:?}", u);
+}
+
+fn print_array() {
+    println!("-----");
+    let a = [1, 2, 3];
+    println!("{:?}", a);
 }
