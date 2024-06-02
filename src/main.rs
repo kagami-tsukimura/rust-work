@@ -108,4 +108,7 @@ fn print_array() {
     println!("-----");
     let a = [1, 2, 3];
     println!("{:?}", a);
+
+    let b: [i32; 1000] = [0; 1000];
+    println!("{:?}", b);
 }
