@@ -111,5 +111,8 @@ fn print_array() {
     println!("{:?}", a);
 
     let b = [0; 1000];
-    println!("{:?}", b);
+    // println!("{:?}", b);
+
+    let c = &b[0..2];
+    println!("{:?}", c);
 }
