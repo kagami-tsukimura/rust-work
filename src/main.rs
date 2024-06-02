@@ -130,4 +130,9 @@ fn print_array() {
 
     let v2 = vec![4, 5, 6];
     println!("{:?}", v2);
+
+    let y = v[1];
+    println!("y: {}", y);
+    let z = v.get(0);
+    println!("z: {:?}", z);
 }
