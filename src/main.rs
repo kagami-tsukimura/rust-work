@@ -4,11 +4,8 @@ const B: i32 = 10;
 fn main() {
     print_msg();
     print_variable();
-
+    print_constant();
     println!("-----");
-    const A: i32 = 1;
-    println!("Local: {}", A);
-    println!("Global: {}", B);
 }
 
 fn print_msg() {
@@ -45,4 +42,11 @@ fn print_variable() {
     // 変数のシャドーイング（型書き換え）: rustではok
     let c: &str = "hello";
     println!("{}", c);
+}
+
+fn print_constant() {
+    println!("-----");
+    const A: i32 = 1;
+    println!("Local: {}", A);
+    println!("Global: {}", B);
 }
