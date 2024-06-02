@@ -20,4 +20,7 @@ fn sentence() {
         println!("{}", y);
     }
     println!("{}", y);
+
+    let z = { 100 };
+    println!("{}", z);
 }
