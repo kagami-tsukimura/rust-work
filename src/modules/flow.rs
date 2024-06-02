@@ -44,11 +44,14 @@ fn branches() {
 fn matches() {
     println!("-----");
     // let x = 1;
-    // let x = 2;
-    let x = 3;
+    let x = 2;
+    // let x = 3;
     match x {
         1 => println!("1"),
-        2 => println!("2"),
+        2 => {
+            println!("2-1");
+            println!("2-2");
+        }
         _ => println!("other"),
     }
 }
