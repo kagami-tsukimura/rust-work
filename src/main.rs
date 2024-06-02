@@ -135,4 +135,6 @@ fn print_array() {
     println!("y: {}", y);
     let z = v.get(0);
     println!("z: {:?}", z);
+    let s = &v[0..2];
+    println!("s: {:?}", s);
 }
