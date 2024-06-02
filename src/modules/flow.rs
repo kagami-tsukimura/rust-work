@@ -35,4 +35,7 @@ fn branch() {
     } else {
         println!("2: {} > 0 || {} < 10", x, x);
     }
+
+    let y = if x > 10 { x } else { 0 };
+    println!("y: {}", y);
 }
