@@ -4,5 +4,11 @@ pub fn main() {
 
 fn sentence() {
     println!("-----");
-    println!("Hello, sentences!");
+    {
+        let x = 1;
+        println!("{}", x);
+    }
+    println!("2");
+    // // error: x is not in scope
+    // println!("{}", x);
 }
