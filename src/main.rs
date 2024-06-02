@@ -106,9 +106,10 @@ fn print_type() {
 
 fn print_array() {
     println!("-----");
+    // 配列: 要素数固定（要素数を可変にする場合はVec）
     let a = [1, 2, 3];
     println!("{:?}", a);
 
-    let b: [i32; 1000] = [0; 1000];
+    let b = [0; 1000];
     println!("{:?}", b);
 }
