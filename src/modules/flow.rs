@@ -12,10 +12,10 @@ fn sentence() {
     // // error: x is not in scope
     // println!("{}", x);
 
-    // シャドーイング
     let y = 10;
     println!("{}", y);
     {
+        // シャドーイング
         let y = 20;
         println!("{}", y);
     }
