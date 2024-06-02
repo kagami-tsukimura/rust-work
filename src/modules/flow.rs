@@ -60,12 +60,14 @@ fn matches() {
 fn loops() {
     println!("-----");
     // loop: 無限ループ
-    let mut x = 0;
+    let mut cnt = 0;
     loop {
-        x += 1;
-        if x > 10 {
+        cnt += 1;
+        if cnt > 10 {
             break;
+        } else if cnt % 2 == 0 {
+            continue;
         }
-        println!("Hello: {}", x);
+        println!("Hello: {}", cnt);
     }
 }
