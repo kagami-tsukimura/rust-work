@@ -154,6 +154,8 @@ fn print_letter() {
     b_str = String::from("Python");
     println!("{}", b_str);
 
-    // String + 文字列: 逆順はコンパイルエラー
+    // String + 文字列
     println!("{}", b_str + b);
+    // // 文字列 + String: コンパイルエラー
+    // println!("{}", b + b_str);
 }
