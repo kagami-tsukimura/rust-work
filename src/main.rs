@@ -153,4 +153,7 @@ fn print_letter() {
     let mut b_str = "Rust".to_string();
     b_str = String::from("Python");
     println!("{}", b_str);
+
+    // String + 文字列: 逆順はコンパイルエラー
+    println!("{}", b_str + b);
 }
