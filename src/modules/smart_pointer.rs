@@ -1,3 +1,5 @@
+use std::rc::Rc;
+
 pub fn main() {
     smart_pointer();
 }
@@ -10,7 +12,6 @@ fn smart_pointer() {
     println!("*x + 2 = {}", *x + 2);
 
     // rc: 値の参照数をカウント(references count)
-    let y = std::rc::Rc::new(10);
+    let y = Rc::new("hello".to_string());
     println!("y_rc: {:p}", y);
-    println!("*y + 2 = {}", *y + 2);
 }
