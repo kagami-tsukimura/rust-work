@@ -13,5 +13,8 @@ fn smart_pointer() {
 
     // rc: 値の参照数をカウント(references count)
     let y = Rc::new("hello".to_string());
-    println!("y_rc: {:p}", y);
+    println!("y_rc count1: {}", Rc::strong_count(&y));
+    let z = Rc::clone(&y);
+    println!("y_rc count2: {}", Rc::strong_count(&y));
+    println!("z_rc count: {}", Rc::strong_count(&z));
 }
