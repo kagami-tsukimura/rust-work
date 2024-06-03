@@ -22,4 +22,10 @@ fn stacks() {
     println!("v2 ptr: {:?}", v2.as_ptr());
     println!("v2 len: {}", v2.len());
     println!("v2 cap: {}", v2.capacity());
+
+    let v3 = v2.clone();
+    println!("v2 ptr: {:?}", v2.as_ptr());
+    println!("v3 ptr: {:?}", v3.as_ptr());
+    println!("v3 len: {}", v3.len());
+    println!("v3 cap: {}", v3.capacity());
 }
