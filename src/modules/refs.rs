@@ -1,4 +1,10 @@
 pub fn main() {
+    references();
+}
+
+fn references() {
     let x = 1;
-    println!("{}", x);
+    let y = &x;
+    println!("{:?}", x);
+    println!("{:?}", y);
 }
