@@ -18,6 +18,7 @@ fn smart_pointer() {
         let z = Rc::clone(&y);
         println!("y: {:p}", y);
         println!("z: {:p}", z);
+        println!("y_ptr == z_ptr: {}", y.as_ptr() == z.as_ptr());
         println!("y_rc count2: {}", Rc::strong_count(&y));
         println!("z_rc count: {}", Rc::strong_count(&z));
     }
