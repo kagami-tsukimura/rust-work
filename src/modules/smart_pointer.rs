@@ -3,8 +3,5 @@ pub fn main() {
 }
 
 fn smart_pointer() {
-    let s = String::from("Hello");
-    let s2 = String::from("Rust");
-    println!("{}", s);
-    println!("{}", s2);
+    // スマートポインタ: データの所有をするポインタ
 }
