@@ -4,7 +4,7 @@ mod modules {
     // pub mod fizz_buzz;
     // pub mod ownership;
     // pub mod refs;
-    pub mod lifetimes;
+    pub mod smart_pointer;
 }
 
 fn main() {
@@ -13,5 +13,5 @@ fn main() {
     // modules::fizz_buzz::main(20);
     // modules::ownership::main();
     // modules::refs::main();
-    modules::lifetimes::main();
+    modules::smart_pointer::main();
 }
