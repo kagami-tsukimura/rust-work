@@ -3,8 +3,7 @@ pub fn main() {
 }
 
 fn stacks() {
-    let x = 1;
-    let y = x;
-    println!("{}", x);
-    println!("{}", y);
+    let mut v1 = vec![1, 2, 3];
+    println!("v1 ptr: {:?}", v1.as_ptr());
+    println!("v1[0]: {:p}", &v1[0]);
 }
