@@ -9,9 +9,13 @@ pub fn main() {
 
 fn structs() {
     let height = 20;
-    let rectangle = Rectangle { width: 10, height };
+    let mut rectangle = Rectangle { width: 10, height };
 
     println!("width; {}", rectangle.width);
     println!("height; {}", rectangle.height);
+    println!("rectangle: {}", rectangle.width * rectangle.height);
+
+    rectangle.height = 30;
+
     println!("rectangle: {}", rectangle.width * rectangle.height);
 }
