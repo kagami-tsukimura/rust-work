@@ -3,9 +3,12 @@ pub fn main() {
 
     let s1 = String::from("Hello");
     let s2 = String::from("Rust");
-    let s = concat(s1, s2);
+    let (s, s1, s2) = concat(s1, s2);
     println!("s: {}", s);
+    println!("s1: {}", s1);
+    println!("s2: {}", s2);
     // 所有権エラー: 関数の引数に所有権が渡されているため
+    // let s = concat(s1, s2);
     // println!("s1_err: {}", s1);
     // println!("s2_err: {}", s2);
 }
@@ -39,7 +42,12 @@ fn stacks() {
     println!("v3 cap: {}", v3.capacity());
 }
 
-fn concat(a: String, b: String) -> String {
+fn concat(a: String, b: String) -> (String, String, String) {
     let c: String = format!("{}, {}", a, b);
-    c
+    (c, a, b)
 }
+
+// fn concat(a: String, b: String) -> String {
+//     let c: String = format!("{}, {}", a, b);
+//     c
+// }
