@@ -14,4 +14,12 @@ fn stacks() {
     println!("v1 ptr: {:?}", v1.as_ptr());
     println!("v1 len: {}", v1.len());
     println!("v1 cap: {}", v1.capacity());
+
+    println!("-----");
+    let v2 = v1;
+    // // 所有権エラー: v1 → v2に所有権が移っているため
+    // println!("v1 ptr: {:?}", v1.as_ptr());
+    println!("v2 ptr: {:?}", v2.as_ptr());
+    println!("v2 len: {}", v2.len());
+    println!("v2 cap: {}", v2.capacity());
 }
