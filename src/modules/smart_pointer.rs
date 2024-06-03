@@ -22,4 +22,5 @@ fn smart_pointer() {
         println!("y_rc count2: {}", Rc::strong_count(&y));
         println!("z_rc count: {}", Rc::strong_count(&z));
     }
+    println!("y_rc count2: {}", Rc::strong_count(&y));
 }
