@@ -3,7 +3,8 @@ mod modules {
     // pub mod flow;
     // pub mod fizz_buzz;
     // pub mod ownership;
-    pub mod refs;
+    // pub mod refs;
+    pub mod smart_pointer;
 }
 
 fn main() {
@@ -11,5 +12,6 @@ fn main() {
     // modules::flow::main();
     // modules::fizz_buzz::main(20);
     // modules::ownership::main();
-    modules::refs::main();
+    // modules::refs::main();
+    modules::smart_pointer::main();
 }
