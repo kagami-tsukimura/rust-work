@@ -24,6 +24,7 @@ fn references() {
 
     let s1 = String::from("Hello");
     let s2 = String::from("Rust");
+    // 共有参照
     let s = concat(&s1, &s2);
     println!("{}", s);
     println!("{}", s1);
