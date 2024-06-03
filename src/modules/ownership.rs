@@ -26,6 +26,7 @@ fn stacks() {
     let v3 = v2.clone();
     println!("v2 ptr: {:?}", v2.as_ptr());
     println!("v3 ptr: {:?}", v3.as_ptr());
+    println!("v2_ptr == v3_ptr? : {}", v2.as_ptr() == v3.as_ptr());
     println!("v3 len: {}", v3.len());
     println!("v3 cap: {}", v3.capacity());
 }
