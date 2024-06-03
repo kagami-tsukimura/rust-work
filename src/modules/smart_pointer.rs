@@ -7,4 +7,5 @@ fn smart_pointer() {
     // box
     let x = Box::new(10);
     println!("x_box: {:p}", x);
+    println!("*x + 2 = {}", *x + 2);
 }
