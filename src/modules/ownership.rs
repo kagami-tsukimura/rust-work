@@ -1,5 +1,12 @@
 pub fn main() {
-    stacks();
+    // stacks();
+
+    let s1 = String::from("Hello");
+    let s2 = String::from("Rust");
+    let s = concat(s1, s2);
+    println!("s: {}", s);
+    // println!("s1_err: {}", s1);
+    // println!("s2_err: {}", s2);
 }
 
 fn stacks() {
@@ -29,4 +36,9 @@ fn stacks() {
     println!("v2_ptr == v3_ptr? : {}", v2.as_ptr() == v3.as_ptr());
     println!("v3 len: {}", v3.len());
     println!("v3 cap: {}", v3.capacity());
+}
+
+fn concat(a: String, b: String) -> String {
+    let c: String = format!("{}, {}", a, b);
+    c
 }
