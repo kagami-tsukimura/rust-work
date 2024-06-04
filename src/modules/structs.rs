@@ -12,14 +12,6 @@ impl Rectangle {
 
 pub fn main() {
     structs();
-    println!(
-        "area: {}",
-        Rectangle {
-            width: 10,
-            height: 20
-        }
-        .area()
-    );
 }
 
 fn structs() {
