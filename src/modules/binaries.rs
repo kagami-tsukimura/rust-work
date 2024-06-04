@@ -4,4 +4,5 @@ pub fn main() {
 
 fn binaries() {
     println!("Hello, binaries!");
+    rust_work::say_hello();
 }
