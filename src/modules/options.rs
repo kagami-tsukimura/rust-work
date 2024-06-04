@@ -37,7 +37,9 @@ fn print_match(x: Option<&i32>) {
 }
 
 fn print_if(x: Option<&i32>) {
-    if let Some(x) = x {
+    if let Some(1) = x {
+        println!("value is 1");
+    } else if let Some(x) = x {
         println!("value exists: {}", x);
     }
 }
