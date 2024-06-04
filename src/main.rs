@@ -9,7 +9,8 @@ mod modules {
     // pub mod enums;
     // pub mod options;
     // pub mod crates;
-    pub mod mods;
+    // pub mod mods;
+    pub mod sub_struct;
 }
 
 fn main() {
@@ -23,5 +24,6 @@ fn main() {
     // modules::enums::main();
     // modules::options::main();
     // modules::crates::main();
-    modules::mods::main();
+    // modules::mods::main();
+    modules::sub_struct::main();
 }
