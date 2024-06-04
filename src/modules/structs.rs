@@ -25,4 +25,6 @@ fn structs() {
     rectangle.height = 30;
 
     println!("rectangle: {}", rectangle.width * rectangle.height);
+
+    println!("area: {}", rectangle.area());
 }
