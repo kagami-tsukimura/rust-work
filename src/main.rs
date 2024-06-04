@@ -10,7 +10,8 @@ mod modules {
     // pub mod options;
     // pub mod crates;
     // pub mod mods;
-    pub mod sub_struct;
+    // pub mod sub_struct;
+    pub mod binaries;
 }
 
 fn main() {
@@ -25,5 +26,6 @@ fn main() {
     // modules::options::main();
     // modules::crates::main();
     // modules::mods::main();
-    modules::sub_struct::main();
+    // modules::sub_struct::main();
+    modules::binaries::main();
 }
