@@ -34,4 +34,8 @@ fn mods() {
     // crate::modules::mods::test_module::sub_module2::test_fn1();
     // // モジュール、関数がprivateのためアクセス不可
     // crate::modules::mods::test_module::sub_module2::test_fn2();
+
+    // crate: このファイルからの相対パスを指定
+    // NOTE: modules/mods.rsから、test_moduleの、sub_module1の、test_fn1を呼び出す
+    self::test_module::sub_module1::test_fn1();
 }
