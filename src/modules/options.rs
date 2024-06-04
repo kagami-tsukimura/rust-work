@@ -32,7 +32,8 @@ fn print_match(x: Option<&i32>) {
     match x {
         // Some(1) => println!("value is 1"),
         // Some(2 | 3) => println!("value is 2 or 3"),
-        Some(x) => println!("value exists: {}", x),
+        // *x: 参照外し→実体にアクセス
+        Some(x) if *x == 1 => println!("value exists: {}", x),
         None => println!("None"),
     }
 }
