@@ -3,8 +3,23 @@ struct Rectangle {
     height: u32,
 }
 
+impl Rectangle {
+    // selfでも所有権が移動するため、共有参照とすること
+    fn area(&self) -> u32 {
+        self.width * self.height
+    }
+}
+
 pub fn main() {
     structs();
+    println!(
+        "area: {}",
+        Rectangle {
+            width: 10,
+            height: 20
+        }
+        .area()
+    );
 }
 
 fn structs() {
