@@ -6,7 +6,8 @@ mod modules {
     // pub mod refs;
     // pub mod smart_pointer;
     // pub mod structs;
-    pub mod enums;
+    // pub mod enums;
+    pub mod options;
 }
 
 fn main() {
@@ -17,5 +18,6 @@ fn main() {
     // modules::refs::main();
     // modules::smart_pointer::main();
     // modules::structs::main();
-    modules::enums::main();
+    // modules::enums::main();
+    modules::options::main();
 }
