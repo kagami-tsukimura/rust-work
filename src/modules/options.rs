@@ -15,18 +15,22 @@ fn options() {
     let v: Vec<i32> = vec![1, 2, 3];
     let val: Option<&i32> = v.get(2);
     let val2: Option<&i32> = v.get(4);
+    let val3: Option<&i32> = v.get(0);
 
     print_match(val);
     print_match(val2);
+    print_match(val3);
 
     println!("-----");
 
     print_if(val);
     print_if(val2);
+    print_if(val3);
 }
 
 fn print_match(x: Option<&i32>) {
     match x {
+        Some(1) => println!("value is 1"),
         Some(x) => println!("value exists: {}", x),
         None => println!("None"),
     }
