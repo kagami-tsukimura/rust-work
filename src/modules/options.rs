@@ -18,11 +18,22 @@ fn options() {
 
     print_match(val);
     print_match(val2);
+
+    println!("-----");
+
+    print_if(val);
+    print_if(val2);
 }
 
 fn print_match(x: Option<&i32>) {
     match x {
         Some(x) => println!("value exists: {}", x),
         None => println!("None"),
+    }
+}
+
+fn print_if(x: Option<&i32>) {
+    if let Some(x) = x {
+        println!("value exists: {}", x);
     }
 }
