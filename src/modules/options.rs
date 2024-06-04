@@ -3,8 +3,8 @@ pub fn main() {
 }
 
 fn options() {
-    let x = Some(5);
+    let a = Some(5);
     let y: Option<i32> = None;
-    println!("{:?}", x);
+    println!("{:?}", a);
     println!("{:?}", y);
 }
