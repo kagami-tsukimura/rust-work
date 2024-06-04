@@ -5,7 +5,8 @@ mod modules {
     // pub mod ownership;
     // pub mod refs;
     // pub mod smart_pointer;
-    pub mod structs;
+    // pub mod structs;
+    pub mod enums;
 }
 
 fn main() {
@@ -15,5 +16,6 @@ fn main() {
     // modules::ownership::main();
     // modules::refs::main();
     // modules::smart_pointer::main();
-    modules::structs::main();
+    // modules::structs::main();
+    modules::enums::main();
 }
