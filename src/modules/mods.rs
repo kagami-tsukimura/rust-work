@@ -4,20 +4,20 @@ mod test_module {
             println!("test_fn1-1");
         }
 
-        fn test_fn2() {
-            println!("test_fn1-2");
-        }
+        // fn test_fn2() {
+        //     println!("test_fn1-2");
+        // }
     }
 
-    mod sub_module2 {
-        pub fn test_fn1() {
-            println!("test_fn1-2");
-        }
+    // mod sub_module2 {
+    //     pub fn test_fn1() {
+    //         println!("test_fn1-2");
+    //     }
 
-        fn test_fn2() {
-            println!("test_fn2-2");
-        }
-    }
+    //     fn test_fn2() {
+    //         println!("test_fn2-2");
+    //     }
+    // }
 }
 
 pub fn main() {
