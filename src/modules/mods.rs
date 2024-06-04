@@ -26,5 +26,5 @@ pub fn main() {
 
 fn mods() {
     // crate: main.rsからの絶対パスを指定
-    crate::modules::test_module::sub_module1::test_fn1();
+    crate::modules::mods::test_module::sub_module1::test_fn1();
 }
