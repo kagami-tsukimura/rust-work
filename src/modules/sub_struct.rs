@@ -3,10 +3,8 @@ pub fn main() {
 }
 
 fn sub_struct() {
-    struct User {
-        username: String,
-        email: String,
-        sign_in_count: u64,
-        active: bool,
+    pub struct Test {
+        val1: i32,
+        val2: i32,
     }
 }
