@@ -3,5 +3,5 @@ pub fn main() {
 }
 
 fn binaries() {
-    println!("Hello, world!");
+    println!("Hello, binaries!");
 }
