@@ -7,7 +7,8 @@ mod modules {
     // pub mod smart_pointer;
     // pub mod structs;
     // pub mod enums;
-    pub mod options;
+    // pub mod options;
+    pub mod crates;
 }
 
 fn main() {
@@ -19,5 +20,6 @@ fn main() {
     // modules::smart_pointer::main();
     // modules::structs::main();
     // modules::enums::main();
-    modules::options::main();
+    // modules::options::main();
+    modules::crates::main();
 }
