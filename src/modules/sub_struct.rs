@@ -4,7 +4,11 @@ pub fn main() {
 
 fn sub_struct() {
     pub struct Test {
-        val1: i32,
-        val2: i32,
+        pub val1: i32,
+        pub val2: i32,
     }
+
+    let test = Test { val1: 1, val2: 2 };
+    println!("{:?}", test.val1);
+    println!("{:?}", test.val2);
 }
