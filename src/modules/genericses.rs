@@ -3,5 +3,13 @@ pub fn main() {
 }
 
 fn genericses() {
-    println!("-----");
+    println!("{}", max(1, 2));
+}
+
+fn max(a: i32, b: i32) -> i32 {
+    if a > b {
+        a
+    } else {
+        b
+    }
 }
