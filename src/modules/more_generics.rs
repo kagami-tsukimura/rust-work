@@ -20,6 +20,16 @@ impl<T: PartialOrd + Debug> Point<T> {
     }
 }
 
+impl Point<i32> {
+    fn min(&self) -> &i32 {
+        if self.x <= self.y {
+            &self.x
+        } else {
+            &self.y
+        }
+    }
+}
+
 pub fn main() {
     more_generics();
 }
@@ -36,4 +46,7 @@ fn more_generics() {
     p1.print_arg("hoge");
     p1.print_arg(1);
     p1.print_arg(true);
+
+    println!("p1.min: {:?}", p1.min());
+    // println!("p2.min: {:?}", p2.min());
 }
