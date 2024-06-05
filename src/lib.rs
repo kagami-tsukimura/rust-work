@@ -1,6 +1,6 @@
 pub mod sample_trait {
     pub trait Shape {
-        fn area(&self) -> f64;
+        fn calc_area(&self) -> f64;
     }
 }
 
