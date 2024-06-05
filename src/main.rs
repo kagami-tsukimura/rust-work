@@ -18,7 +18,8 @@ mod modules {
     // pub mod derive;
     // pub mod genericses;
     // pub mod more_generics;
-    pub mod panics;
+    // pub mod panics;
+    pub mod results;
 }
 
 fn main() {
@@ -41,5 +42,6 @@ fn main() {
     // modules::derive::main();
     // modules::genericses::main();
     // modules::more_generics::main();
-    modules::panics::main();
+    // modules::panics::main();
+    modules::results::main();
 }
