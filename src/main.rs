@@ -13,7 +13,8 @@ mod modules {
     // pub mod sub_struct;
     // pub mod binaries;
     // pub mod traits;
-    pub mod defaults;
+    // pub mod defaults;
+    pub mod lib_args;
 }
 
 fn main() {
@@ -31,5 +32,6 @@ fn main() {
     // modules::sub_struct::main();
     // modules::binaries::main();
     // modules::traits::main();
-    modules::defaults::main();
+    // modules::defaults::main();
+    modules::lib_args::main();
 }

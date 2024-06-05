@@ -46,8 +46,8 @@ pub mod sample_trait {
         }
     }
 
-    pub fn double_area(shape: &impl Shape) {
-        println!("{}", shape.calc_area() * 2.0);
+    pub fn double_area(shape: &impl Shape) -> f64 {
+        shape.calc_area() * 2.0
     }
 }
 
