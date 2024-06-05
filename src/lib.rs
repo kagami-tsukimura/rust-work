@@ -20,6 +20,9 @@ pub mod sample_trait {
         fn calc_perimeter(&self) -> f64 {
             2.0 * (self.width + self.height)
         }
+        fn default_something(&self) -> &str {
+            "This is Rectangle default!"
+        }
         fn do_something() {
             println!("do something Rectangle");
         }
