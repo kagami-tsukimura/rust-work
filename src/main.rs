@@ -14,7 +14,8 @@ mod modules {
     // pub mod binaries;
     // pub mod traits;
     // pub mod defaults;
-    pub mod lib_args;
+    // pub mod lib_args;
+    pub mod derive;
 }
 
 fn main() {
@@ -33,5 +34,6 @@ fn main() {
     // modules::binaries::main();
     // modules::traits::main();
     // modules::defaults::main();
-    modules::lib_args::main();
+    // modules::lib_args::main();
+    modules::derive::main();
 }
