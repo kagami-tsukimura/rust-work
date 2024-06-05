@@ -45,6 +45,10 @@ pub mod sample_trait {
             println!("do something Circle");
         }
     }
+
+    pub fn double_area(shape: &impl Shape) -> f64 {
+        shape.calc_area() * 2.0
+    }
 }
 
 // ! lib.rs documentation
