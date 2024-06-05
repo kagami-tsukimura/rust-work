@@ -15,7 +15,8 @@ mod modules {
     // pub mod traits;
     // pub mod defaults;
     // pub mod lib_args;
-    pub mod derive;
+    // pub mod derive;
+    pub mod genericses;
 }
 
 fn main() {
@@ -35,5 +36,6 @@ fn main() {
     // modules::traits::main();
     // modules::defaults::main();
     // modules::lib_args::main();
-    modules::derive::main();
+    // modules::derive::main();
+    modules::genericses::main();
 }
