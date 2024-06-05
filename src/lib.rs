@@ -30,6 +30,14 @@ pub mod sample_trait {
         fn calc_area(&self) -> f64 {
             self.radius * self.radius * std::f64::consts::PI
         }
+
+        fn calc_perimeter(&self) -> f64 {
+            self.radius * 2.0 * std::f64::consts::PI
+        }
+
+        fn do_something() {
+            println!("do something");
+        }
     }
 }
 
