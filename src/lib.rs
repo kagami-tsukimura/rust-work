@@ -2,6 +2,9 @@ pub mod sample_trait {
     pub trait Shape {
         fn calc_area(&self) -> f64;
         fn calc_perimeter(&self) -> f64;
+        fn default_something(&self) -> &str {
+            "This is default method!"
+        }
         fn do_something();
     }
 
