@@ -3,5 +3,5 @@ pub fn main() {
 }
 
 fn derive() {
-    println!("Hello, derive!");
+    // #[属性名]
 }
