@@ -21,6 +21,16 @@ pub mod sample_trait {
             println!("do something");
         }
     }
+
+    pub struct Circle {
+        pub radius: f64,
+    }
+
+    impl Shape for Circle {
+        fn calc_area(&self) -> f64 {
+            self.radius * self.radius * std::f64::consts::PI
+        }
+    }
 }
 
 // ! lib.rs documentation
