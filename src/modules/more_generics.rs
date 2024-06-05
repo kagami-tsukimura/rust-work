@@ -48,5 +48,6 @@ fn more_generics() {
     p1.print_arg(true);
 
     println!("p1.min: {:?}", p1.min());
+    // p2: f64型のためエラー(min関数はi32型のみ実行できる)
     // println!("p2.min: {:?}", p2.min());
 }
