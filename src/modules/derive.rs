@@ -16,6 +16,8 @@ fn derive() {
 
     let s1 = S { val1: 1, val2: 2 };
     let s2 = S { val1: 1, val2: 3 };
+    let s3 = S { val1: 1, val2: 3 };
 
     println!("{}", s1 == s2);
+    println!("{}", s2 == s3);
 }
