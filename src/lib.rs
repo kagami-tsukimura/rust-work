@@ -1,3 +1,9 @@
+pub mod sample_trait {
+    pub trait Shape {
+        fn area(&self) -> f64;
+    }
+}
+
 // ! lib.rs documentation
 pub fn say_hello() {
     println!("Hello!");
