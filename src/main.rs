@@ -1,5 +1,3 @@
-use rust_work::sample_trait::{Circle, Rectangle, Shape};
-
 mod modules {
     // pub mod basic;
     // pub mod flow;
@@ -14,6 +12,7 @@ mod modules {
     // pub mod mods;
     // pub mod sub_struct;
     // pub mod binaries;
+    pub mod traits;
 }
 
 fn main() {
@@ -30,18 +29,5 @@ fn main() {
     // modules::mods::main();
     // modules::sub_struct::main();
     // modules::binaries::main();
-
-    let rect = Rectangle {
-        width: 4.0,
-        height: 5.0,
-    };
-
-    let circle = Circle { radius: 3.0 };
-
-    println!("Rectangle area is {}", rect.calc_area());
-    println!("Rectangle perimeter is {}", rect.calc_perimeter());
-    Rectangle::do_something();
-    println!("Circle area is {}", circle.calc_area());
-    println!("Circle perimeter is {}", circle.calc_perimeter());
-    Circle::do_something();
+    modules::traits::main();
 }
