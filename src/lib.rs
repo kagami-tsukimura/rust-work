@@ -18,7 +18,7 @@ pub mod sample_trait {
             2.0 * (self.width + self.height)
         }
         fn do_something() {
-            println!("do something");
+            println!("do something Rectangle");
         }
     }
 
@@ -36,7 +36,7 @@ pub mod sample_trait {
         }
 
         fn do_something() {
-            println!("do something");
+            println!("do something Circle");
         }
     }
 }
