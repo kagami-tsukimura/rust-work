@@ -70,10 +70,11 @@ fn match_modules() {
 }
 
 fn is_modules() {
-    let s = need_even(1);
+    let s = need_even(2);
     println!("{}", s.is_ok());
     println!("{}", s.is_err());
 
-    // println!("{:?}", s.ok());
-    println!("{:?}", s.err());
+    // 所有権の移動あり
+    println!("{:?}", s.ok());
+    // println!("{:?}", s.err());
 }
