@@ -87,9 +87,12 @@ fn is_modules() {
 }
 
 fn transfer() {
-    match double_even(2) {
+    match double_even(3) {
         Ok(val) => println!("{}", val),
-        Err(err) => println!("{}", err),
+        Err(err) => {
+            println!("mainでハンドリング");
+            println!("{}", err);
+        }
     }
     // println!("{:?}", double_even(2));
     // println!("{:?}", double_even(1));
