@@ -43,8 +43,7 @@ fn main() {
     // modules::more_generics::main();
     // modules::panics::main();
 
-    println!("{:?}", need_even(10));
-    println!("{:?}", need_even(5));
+    modules();
 }
 
 fn need_even(a: i32) -> Result<i32, String> {
@@ -53,4 +52,17 @@ fn need_even(a: i32) -> Result<i32, String> {
     } else {
         Err(String::from("引数は偶数にしてください。"))
     }
+}
+
+fn modules() {
+    println!("{:?}", need_even(10));
+    println!("{:?}", need_even(5));
+    let x = match need_even(10) {
+        Ok(val) => val,
+        Err(msg) => {
+            println!("{}", msg);
+            panic!()
+        }
+    };
+    println!("{}", x);
 }
