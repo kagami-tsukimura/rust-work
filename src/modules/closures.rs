@@ -7,6 +7,7 @@ fn closures() {
     println!("{}", c1(10));
 
     let m = 10;
+    // x + mの結果を固定
     let c2 = |x: i32| x + m;
     println!("{}", c2(10));
 
