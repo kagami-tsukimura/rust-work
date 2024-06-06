@@ -87,13 +87,21 @@ fn is_modules() {
 }
 
 fn transfer() {
-    println!("{:?}", double_even(2));
-    println!("{:?}", double_even(1));
+    match double_even(2) {
+        Ok(val) => println!("{}", val),
+        Err(err) => println!("{}", err),
+    }
+    // println!("{:?}", double_even(2));
+    // println!("{:?}", double_even(1));
 }
 
 fn double_even(b: i32) -> Result<i32, String> {
-    match need_even(b) {
-        Ok(val) => Ok(val * 2),
-        Err(err) => Err(err),
-    }
+    // match need_even(b) {
+    //     Ok(val) => Ok(val * 2),
+    //     Err(err) => Err(err),
+    // }
+
+    // ?演算子: 委譲
+    let x = need_even(b)?;
+    Ok(x * 2)
 }
