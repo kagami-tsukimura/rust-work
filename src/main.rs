@@ -45,6 +45,7 @@ fn main() {
 
     match_modules();
     is_modules();
+    transfer();
 }
 
 fn need_even(a: i32) -> Result<i32, String> {
@@ -81,7 +82,13 @@ fn is_modules() {
     // println!("{:?}", s.unwrap_or(0));
     // println!("{:?}", s.unwrap());
 
-    println!("{:?}", s.expect("expectから発生"));
+    // println!("{:?}", s.expect("expectから発生"));
+    println!("-----");
+}
+
+fn transfer() {
+    println!("{:?}", double_even(2));
+    println!("{:?}", double_even(1));
 }
 
 fn double_even(b: i32) -> Result<i32, String> {
