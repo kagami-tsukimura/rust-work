@@ -19,7 +19,6 @@ mod modules {
     // pub mod genericses;
     // pub mod more_generics;
     // pub mod panics;
-    pub mod results;
 }
 
 fn main() {
@@ -43,5 +42,15 @@ fn main() {
     // modules::genericses::main();
     // modules::more_generics::main();
     // modules::panics::main();
-    modules::results::main();
+
+    println!("{:?}", need_even(10));
+    println!("{:?}", need_even(5));
+}
+
+fn need_even(a: i32) -> Result<i32, String> {
+    if a % 2 == 0 {
+        Ok(a)
+    } else {
+        Err(String::from("引数は偶数にしてください。"))
+    }
 }
