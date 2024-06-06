@@ -70,7 +70,7 @@ fn match_modules() {
 }
 
 fn is_modules() {
-    let s = need_even(2);
+    let s = need_even(1);
     println!("{}", s.is_ok());
     println!("{}", s.is_err());
 
