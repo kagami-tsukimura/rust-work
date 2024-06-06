@@ -73,4 +73,7 @@ fn is_modules() {
     let s = need_even(2);
     println!("{}", s.is_ok());
     println!("{}", s.is_err());
+
+    println!("{:?}", s.ok());
+    // println!("{:?}", s.err());
 }
