@@ -3,6 +3,6 @@ pub fn main() {
 }
 
 fn closures() {
-    let add = |x, y| x + y;
-    println!("{}", add(1, 2));
+    let c1 = |x: i32| x + 1;
+    println!("{}", c1(10));
 }
