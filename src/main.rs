@@ -43,7 +43,7 @@ fn main() {
     // modules::more_generics::main();
     // modules::panics::main();
 
-    modules();
+    match_modules();
 }
 
 fn need_even(a: i32) -> Result<i32, String> {
@@ -54,10 +54,10 @@ fn need_even(a: i32) -> Result<i32, String> {
     }
 }
 
-fn modules() {
+fn match_modules() {
     println!("{:?}", need_even(10));
     println!("{:?}", need_even(5));
-    let x = match need_even(5) {
+    let x = match need_even(10) {
         Ok(val) => val,
         Err(msg) => {
             println!("{}", msg);
