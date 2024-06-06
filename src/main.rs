@@ -75,6 +75,8 @@ fn is_modules() {
     println!("{}", s.is_err());
 
     // 所有権の移動あり
-    println!("{:?}", s.ok());
+    // println!("{:?}", s.ok());
     // println!("{:?}", s.err());
+
+    println!("{:?}", s.unwrap_or(0));
 }
