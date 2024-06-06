@@ -60,8 +60,8 @@ fn match_modules() {
     println!("{:?}", need_even(5));
     let x = match need_even(10) {
         Ok(val) => val,
-        Err(msg) => {
-            println!("{}", msg);
+        Err(err) => {
+            println!("{}", err);
             panic!()
         }
     };
