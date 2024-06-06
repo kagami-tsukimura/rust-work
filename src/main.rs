@@ -19,6 +19,7 @@ mod modules {
     // pub mod genericses;
     // pub mod more_generics;
     // pub mod panics;
+    pub mod closures;
 }
 
 fn main() {
@@ -43,68 +44,70 @@ fn main() {
     // modules::more_generics::main();
     // modules::panics::main();
 
-    match_modules();
-    is_modules();
-    transfer();
+    // match_modules();
+    // is_modules();
+    // transfer();
+
+    modules::closures::main();
 }
 
-fn need_even(a: i32) -> Result<i32, String> {
-    if a % 2 == 0 {
-        Ok(a)
-    } else {
-        Err(String::from("引数は偶数にしてください。"))
-    }
-}
+// fn need_even(a: i32) -> Result<i32, String> {
+//     if a % 2 == 0 {
+//         Ok(a)
+//     } else {
+//         Err(String::from("引数は偶数にしてください。"))
+//     }
+// }
 
-fn match_modules() {
-    println!("{:?}", need_even(10));
-    println!("{:?}", need_even(5));
-    let x = match need_even(10) {
-        Ok(val) => val,
-        Err(err) => {
-            println!("{}", err);
-            panic!()
-        }
-    };
-    println!("{}", x);
-    println!("-----");
-}
+// fn match_modules() {
+//     println!("{:?}", need_even(10));
+//     println!("{:?}", need_even(5));
+//     let x = match need_even(10) {
+//         Ok(val) => val,
+//         Err(err) => {
+//             println!("{}", err);
+//             panic!()
+//         }
+//     };
+//     println!("{}", x);
+//     println!("-----");
+// }
 
-fn is_modules() {
-    let s = need_even(1);
-    println!("{}", s.is_ok());
-    println!("{}", s.is_err());
+// fn is_modules() {
+//     let s = need_even(1);
+//     println!("{}", s.is_ok());
+//     println!("{}", s.is_err());
 
-    // 所有権の移動あり
-    // println!("{:?}", s.ok());
-    // println!("{:?}", s.err());
+//     // 所有権の移動あり
+//     // println!("{:?}", s.ok());
+//     // println!("{:?}", s.err());
 
-    // println!("{:?}", s.unwrap_or(0));
-    // println!("{:?}", s.unwrap());
+//     // println!("{:?}", s.unwrap_or(0));
+//     // println!("{:?}", s.unwrap());
 
-    // println!("{:?}", s.expect("expectから発生"));
-    println!("-----");
-}
+//     // println!("{:?}", s.expect("expectから発生"));
+//     println!("-----");
+// }
 
-fn transfer() {
-    match double_even(4) {
-        Ok(val) => println!("{}", val),
-        Err(err) => {
-            println!("mainでハンドリング");
-            println!("{}", err);
-        }
-    }
-    // println!("{:?}", double_even(2));
-    // println!("{:?}", double_even(1));
-}
+// fn transfer() {
+//     match double_even(4) {
+//         Ok(val) => println!("{}", val),
+//         Err(err) => {
+//             println!("mainでハンドリング");
+//             println!("{}", err);
+//         }
+//     }
+//     // println!("{:?}", double_even(2));
+//     // println!("{:?}", double_even(1));
+// }
 
-fn double_even(b: i32) -> Result<i32, String> {
-    // match need_even(b) {
-    //     Ok(val) => Ok(val * 2),
-    //     Err(err) => Err(err),
-    // }
+// fn double_even(b: i32) -> Result<i32, String> {
+//     // match need_even(b) {
+//     //     Ok(val) => Ok(val * 2),
+//     //     Err(err) => Err(err),
+//     // }
 
-    // ?演算子: 委譲
-    let x = need_even(b)?;
-    Ok(x * 2)
-}
+//     // ?演算子: 委譲
+//     let x = need_even(b)?;
+//     Ok(x * 2)
+// }
