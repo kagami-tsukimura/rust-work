@@ -44,6 +44,7 @@ fn main() {
     // modules::panics::main();
 
     match_modules();
+    is_modules();
 }
 
 fn need_even(a: i32) -> Result<i32, String> {
@@ -65,4 +66,11 @@ fn match_modules() {
         }
     };
     println!("{}", x);
+    println!("-----");
+}
+
+fn is_modules() {
+    let s = need_even(2);
+    println!("{}", s.is_ok());
+    println!("{}", s.is_err());
 }
