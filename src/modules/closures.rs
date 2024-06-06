@@ -14,4 +14,11 @@ fn closures() {
     let m = 20;
     // シャドーイングしても固定時から結果が変わらない
     println!("{}", c2(10));
+
+    let v = vec![1, 2, 3];
+    let c3 = || {
+        println!("v: {:?}", v);
+    };
+    c3();
+    println!("{:?}", v);
 }
