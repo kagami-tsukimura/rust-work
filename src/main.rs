@@ -18,7 +18,7 @@ mod modules {
     // pub mod derive;
     // pub mod genericses;
     // pub mod more_generics;
-    pub mod panics;
+    // pub mod panics;
 }
 
 fn main() {
@@ -41,5 +41,45 @@ fn main() {
     // modules::derive::main();
     // modules::genericses::main();
     // modules::more_generics::main();
-    modules::panics::main();
+    // modules::panics::main();
+
+    match_modules();
+    is_modules();
+}
+
+fn need_even(a: i32) -> Result<i32, String> {
+    if a % 2 == 0 {
+        Ok(a)
+    } else {
+        Err(String::from("引数は偶数にしてください。"))
+    }
+}
+
+fn match_modules() {
+    println!("{:?}", need_even(10));
+    println!("{:?}", need_even(5));
+    let x = match need_even(10) {
+        Ok(val) => val,
+        Err(msg) => {
+            println!("{}", msg);
+            panic!()
+        }
+    };
+    println!("{}", x);
+    println!("-----");
+}
+
+fn is_modules() {
+    let s = need_even(1);
+    println!("{}", s.is_ok());
+    println!("{}", s.is_err());
+
+    // 所有権の移動あり
+    // println!("{:?}", s.ok());
+    // println!("{:?}", s.err());
+
+    // println!("{:?}", s.unwrap_or(0));
+    // println!("{:?}", s.unwrap());
+
+    println!("{:?}", s.expect("expectから発生"));
 }
