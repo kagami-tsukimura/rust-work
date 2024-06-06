@@ -83,3 +83,10 @@ fn is_modules() {
 
     println!("{:?}", s.expect("expectから発生"));
 }
+
+fn double_even(b: i32) -> Result<i32, String> {
+    match need_even(b) {
+        Ok(val) => Ok(val * 2),
+        Err(err) => Err(err),
+    }
+}
