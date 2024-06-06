@@ -79,5 +79,7 @@ fn is_modules() {
     // println!("{:?}", s.err());
 
     // println!("{:?}", s.unwrap_or(0));
-    println!("{:?}", s.unwrap());
+    // println!("{:?}", s.unwrap());
+
+    println!("{:?}", s.expect("expectから発生"));
 }
