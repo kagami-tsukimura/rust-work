@@ -45,6 +45,7 @@ fn main() {
 
     match_modules();
     is_modules();
+    transfer();
 }
 
 fn need_even(a: i32) -> Result<i32, String> {
@@ -60,8 +61,8 @@ fn match_modules() {
     println!("{:?}", need_even(5));
     let x = match need_even(10) {
         Ok(val) => val,
-        Err(msg) => {
-            println!("{}", msg);
+        Err(err) => {
+            println!("{}", err);
             panic!()
         }
     };
@@ -81,5 +82,29 @@ fn is_modules() {
     // println!("{:?}", s.unwrap_or(0));
     // println!("{:?}", s.unwrap());
 
-    println!("{:?}", s.expect("expectから発生"));
+    // println!("{:?}", s.expect("expectから発生"));
+    println!("-----");
+}
+
+fn transfer() {
+    match double_even(4) {
+        Ok(val) => println!("{}", val),
+        Err(err) => {
+            println!("mainでハンドリング");
+            println!("{}", err);
+        }
+    }
+    // println!("{:?}", double_even(2));
+    // println!("{:?}", double_even(1));
+}
+
+fn double_even(b: i32) -> Result<i32, String> {
+    // match need_even(b) {
+    //     Ok(val) => Ok(val * 2),
+    //     Err(err) => Err(err),
+    // }
+
+    // ?演算子: 委譲
+    let x = need_even(b)?;
+    Ok(x * 2)
 }
