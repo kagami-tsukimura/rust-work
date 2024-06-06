@@ -16,6 +16,8 @@ fn closures() {
     println!("{}", c2(10));
 
     let v = vec![1, 2, 3];
+    // move ||: vの所有権をclosureに移動
+    // let c3 = move || {
     let c3 = || {
         println!("v: {:?}", v);
     };
