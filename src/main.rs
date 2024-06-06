@@ -57,7 +57,7 @@ fn need_even(a: i32) -> Result<i32, String> {
 fn modules() {
     println!("{:?}", need_even(10));
     println!("{:?}", need_even(5));
-    let x = match need_even(10) {
+    let x = match need_even(5) {
         Ok(val) => val,
         Err(msg) => {
             println!("{}", msg);
