@@ -9,4 +9,7 @@ fn closures() {
     let m = 10;
     let c2 = |x: i32| x + m;
     println!("{}", c2(10));
+
+    let m = 20;
+    println!("{}", c2(10));
 }
