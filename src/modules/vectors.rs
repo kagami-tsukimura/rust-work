@@ -10,5 +10,9 @@ fn vectors() {
     println!("{:?}", v1.capacity());
 
     let v2 = vec!["Rust", "Python", "Java"];
+    // vectorの要素取得
+    // &v2[0]: 値をそのまま取得→存在しないインデックスでpanic
     println!("{:?}", &v2[0]);
+    // v2.get(0): 値の中身を取り出す必要がある→存在しないインデックスでNone
+    println!("{:?}", v2.get(0));
 }
