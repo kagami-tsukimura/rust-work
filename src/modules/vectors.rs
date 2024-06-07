@@ -3,7 +3,6 @@ pub fn main() {
 }
 
 fn vectors() {
-    let mut v = vec![1, 2, 3, 4, 5];
-    v.push(6);
+    let v = vec!["Rust", "Python", "Java"];
     println!("{:?}", v);
 }
