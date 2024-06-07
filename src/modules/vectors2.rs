@@ -29,4 +29,19 @@ fn vectors2() {
     // vector降順
     v6.reverse();
     println!("after reverse: {:?}", v6);
+
+    println!("-----");
+
+    #[derive(Debug)]
+    struct S {
+        val1: i32,
+        val2: i32,
+    }
+    let mut v7 = vec![
+        S { val1: 3, val2: 1 },
+        S { val1: 2, val2: 2 },
+        S { val1: 1, val2: 3 },
+    ];
+    v7.sort_by_key(|s| s.val1);
+    println!("{:?}", v7);
 }
