@@ -9,4 +9,7 @@ fn iterator_method1() {
     for val in m {
         println!("{}", val);
     }
+
+    let c: Vec<_> = v.iter().map(|x| x * 2).collect();
+    println!("{:?}", c);
 }
