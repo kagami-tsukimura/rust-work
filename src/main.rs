@@ -21,7 +21,8 @@ mod modules {
     // pub mod panics;
     // pub mod closures;
     // pub mod iterators;
-    pub mod iterator_traits;
+    // pub mod iterator_traits;
+    pub mod counter_iterate;
 }
 
 fn main() {
@@ -52,7 +53,8 @@ fn main() {
 
     // modules::closures::main();
     // modules::iterators::main();
-    modules::iterator_traits::main();
+    // modules::iterator_traits::main();
+    modules::counter_iterate::main();
 }
 
 // fn need_even(a: i32) -> Result<i32, String> {
