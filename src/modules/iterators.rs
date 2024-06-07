@@ -17,4 +17,13 @@ fn iterators() {
     println!("{:?}", v2_iter.next());
     println!("{:?}", v2_iter.next());
     println!("{:?}", v2_iter.next());
+
+    let mut v = vec![1, 2, 3, 4, 5];
+    let mut v2_iter = v.iter_mut();
+    println!("{:?}", v2_iter.next());
+    println!("{:?}", v2_iter.next());
+    println!("{:?}", v2_iter.next());
+    println!("{:?}", v2_iter.next());
+    println!("{:?}", v2_iter.next());
+    println!("{:?}", v2_iter.next());
 }
