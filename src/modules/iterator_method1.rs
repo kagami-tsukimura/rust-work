@@ -4,6 +4,7 @@ pub fn main() {
 
 fn iterator_method1() {
     let v = vec![1, 2, 3, 4, 5];
+    // イテレータを消費しないメソッド: map, filter
     // map
     let m = v.iter().map(|x| x * 2);
     // イテレータの消費
