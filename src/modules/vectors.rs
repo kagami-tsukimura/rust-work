@@ -20,6 +20,7 @@ fn vectors() {
     let mut v3 = vec!["Rust", "Python", "Java"];
     v3.push("PHP");
     println!("{:?}", v3);
+    println!("{:?}", v3.get(0).unwrap());
     let val = v3.pop();
     println!("{:?}", val);
     println!("{:?}", v3);
