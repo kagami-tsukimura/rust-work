@@ -21,6 +21,7 @@ fn vectors2() {
 
     println!("-----");
 
+    // vector昇順
     let mut v6 = vec![3, 6, 1, 7, 2];
     println!("beore sort: {:?}", v6);
     v6.sort();
