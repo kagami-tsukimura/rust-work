@@ -12,4 +12,9 @@ fn iterators() {
     println!("-----");
     let mut v2_iter = v.iter();
     println!("{:?}", v2_iter.next());
+    println!("{:?}", v2_iter.next());
+    println!("{:?}", v2_iter.next());
+    println!("{:?}", v2_iter.next());
+    println!("{:?}", v2_iter.next());
+    println!("{:?}", v2_iter.next());
 }
