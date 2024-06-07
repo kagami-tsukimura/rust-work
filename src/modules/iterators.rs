@@ -8,4 +8,7 @@ fn iterators() {
     for i in v_iter {
         println!("{:?}", i);
     }
+
+    let mut v2_iter = v.iter();
+    println!("{:?}", v2_iter.next());
 }
