@@ -20,7 +20,11 @@ mod modules {
     // pub mod more_generics;
     // pub mod panics;
     // pub mod closures;
-    pub mod iterators;
+    // pub mod iterators;
+    // pub mod iterator_traits;
+    // pub mod counter_iterate;
+    // pub mod iterator_method1;
+    pub mod iterator_method2;
 }
 
 fn main() {
@@ -50,7 +54,11 @@ fn main() {
     // transfer();
 
     // modules::closures::main();
-    modules::iterators::main();
+    // modules::iterators::main();
+    // modules::iterator_traits::main();
+    // modules::counter_iterate::main();
+    // modules::iterator_method1::main();
+    modules::iterator_method2::main();
 }
 
 // fn need_even(a: i32) -> Result<i32, String> {
