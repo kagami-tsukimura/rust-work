@@ -9,6 +9,8 @@ fn vectors() {
     println!("{:?}", v1.len());
     println!("{:?}", v1.capacity());
 
+    println!("-----");
+
     let v2 = vec!["Rust", "Python", "Java"];
     // vectorの要素取得
     // &v2[0]: 値をそのまま取得→存在しないインデックスでpanic
@@ -17,11 +19,14 @@ fn vectors() {
     println!("{:?}", v2.get(0));
     println!("{:?}", v2.get(0).unwrap());
 
+    println!("-----");
+
     let mut v3 = vec!["Rust", "Python", "Java"];
     v3.push("PHP");
     println!("{:?}", v3);
     println!("{:?}", v3.get(0).unwrap());
     let val = v3.pop();
     println!("{:?}", val);
+    println!("{:?}", val.unwrap());
     println!("{:?}", v3);
 }
