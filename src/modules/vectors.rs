@@ -3,6 +3,6 @@ pub fn main() {
 }
 
 fn vectors() {
-    let v = vec!["Rust", "Python", "Java"];
-    println!("{:?}", v);
+    let v1 = vec!["Rust", "Python", "Java"];
+    println!("{:?}", v1);
 }
