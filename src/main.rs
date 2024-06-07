@@ -24,7 +24,9 @@ mod modules {
     // pub mod iterator_traits;
     // pub mod counter_iterate;
     // pub mod iterator_method1;
-    pub mod iterator_method2;
+    // pub mod iterator_method2;
+    // pub mod vectors;
+    pub mod vectors2;
 }
 
 fn main() {
@@ -58,7 +60,9 @@ fn main() {
     // modules::iterator_traits::main();
     // modules::counter_iterate::main();
     // modules::iterator_method1::main();
-    modules::iterator_method2::main();
+    // modules::iterator_method2::main();
+    // modules::vectors::main();
+    modules::vectors2::main();
 }
 
 // fn need_even(a: i32) -> Result<i32, String> {
