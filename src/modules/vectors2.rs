@@ -9,4 +9,9 @@ fn vectors2() {
     let v3 = [v1, v2].concat();
 
     println!("{:?}", v3);
+
+    // vector分割
+    let (v4, v5) = v3.split_at(3);
+    println!("{:?}", v4);
+    println!("{:?}", v5);
 }
