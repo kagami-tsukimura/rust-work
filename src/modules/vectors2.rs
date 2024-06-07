@@ -22,7 +22,7 @@ fn vectors2() {
     println!("-----");
 
     let mut v6 = vec![3, 6, 1, 7, 2];
+    println!("beore sort: {:?}", v6);
     v6.sort();
-
-    println!("{:?}", v6);
+    println!("after sort: {:?}", v6);
 }
