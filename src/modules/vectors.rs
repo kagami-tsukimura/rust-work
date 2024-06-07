@@ -33,4 +33,6 @@ fn vectors() {
     let mut v4 = vec!["Rust", "Python", "Java"];
     v4.insert(1, "C#");
     println!("{:?}", v4);
+    v4.remove(2);
+    println!("{:?}", v4);
 }
