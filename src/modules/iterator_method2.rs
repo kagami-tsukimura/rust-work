@@ -20,4 +20,7 @@ fn iterator_method2() {
     let max = v.iter().max();
     println!("{:?}", min);
     println!("{:?}", max);
+
+    let s2 = v.iter().fold(0, |sum, x| sum + x);
+    println!("{:?}", s2);
 }
