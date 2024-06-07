@@ -22,11 +22,9 @@ pub fn main() {
 }
 
 fn counter_iterate() {
-    let mut v = vec![1, 2, 3, 4, 5];
-    let mut v_iter = v.iter();
-    let mut cnt = 0;
-    while let Some(i) = v_iter.next() {
-        println!("{}: {}", cnt, i);
-        cnt += 1;
+    let mut c = Counter { start: 1, end: 5 };
+
+    for i in c {
+        println!("{}", i);
     }
 }
