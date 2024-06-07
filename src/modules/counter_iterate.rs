@@ -24,7 +24,13 @@ pub fn main() {
 fn counter_iterate() {
     let mut c = Counter { start: 1, end: 5 };
 
-    for i in c {
-        println!("{}", i);
-    }
+    // for i in c {
+    //     println!("{}", i);
+    // }
+
+    println!("{:?}", c.next());
+    println!("{:?}", c.next());
+    println!("{:?}", c.next());
+    println!("{:?}", c.next());
+    println!("{:?}", c.next());
 }
