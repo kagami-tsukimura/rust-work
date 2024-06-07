@@ -20,4 +20,9 @@ fn vectors2() {
     println!("{:?}, {:?}", v4.len(), v5.len());
 
     println!("-----");
+
+    let mut v6 = vec![3, 6, 1, 7, 2];
+    v6.sort();
+
+    println!("{:?}", v6);
 }
