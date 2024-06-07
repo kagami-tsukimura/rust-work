@@ -21,6 +21,7 @@ fn iterator_method2() {
     println!("{:?}", min);
     println!("{:?}", max);
 
+    // fold
     let s2 = v.iter().fold(0, |sum, x| sum + x);
     println!("{:?}", s2);
 }
