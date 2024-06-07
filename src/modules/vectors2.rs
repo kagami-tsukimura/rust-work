@@ -48,4 +48,9 @@ fn vectors2() {
     let v8 = vec![3, 6, 1, 7, 2];
     println!("{:?}", v8.contains(&6));
     println!("{:?}", v8.contains(&5));
+
+    let x = v8.iter().position(|x| *x == 6);
+    let y = v8.iter().position(|x| *x == 5);
+    println!("{:?}", x);
+    println!("{:?}", y);
 }
