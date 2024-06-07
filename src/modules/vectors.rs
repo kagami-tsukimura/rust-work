@@ -14,5 +14,5 @@ fn vectors() {
     // &v2[0]: 値をそのまま取得→存在しないインデックスでpanic
     println!("{:?}", &v2[0]);
     // v2.get(0): 値の中身を取り出す必要がある→存在しないインデックスでNone
-    println!("{:?}", v2.get(0));
+    println!("{:?}", v2.get(0).unwrap());
 }
