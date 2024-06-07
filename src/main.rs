@@ -19,7 +19,8 @@ mod modules {
     // pub mod genericses;
     // pub mod more_generics;
     // pub mod panics;
-    pub mod closures;
+    // pub mod closures;
+    pub mod iterators;
 }
 
 fn main() {
@@ -48,7 +49,8 @@ fn main() {
     // is_modules();
     // transfer();
 
-    modules::closures::main();
+    // modules::closures::main();
+    modules::iterators::main();
 }
 
 // fn need_even(a: i32) -> Result<i32, String> {
