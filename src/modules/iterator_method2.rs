@@ -14,4 +14,10 @@ fn iterator_method2() {
     let p: i32 = v.iter().product();
     println!("{:?}", s);
     println!("{:?}", p);
+
+    // min, max
+    let min = v.iter().min();
+    let max = v.iter().max();
+    println!("{:?}", min);
+    println!("{:?}", max);
 }
