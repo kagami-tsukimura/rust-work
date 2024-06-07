@@ -44,4 +44,8 @@ fn vectors2() {
     ];
     v7.sort_by_key(|s| s.val1);
     println!("{:?}", v7);
+
+    let v8 = vec![3, 6, 1, 7, 2];
+    println!("{:?}", v8.contains(&6));
+    println!("{:?}", v8.contains(&5));
 }
