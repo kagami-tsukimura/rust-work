@@ -16,4 +16,11 @@ fn vectors() {
     // v2.get(0): 値の中身を取り出す必要がある→存在しないインデックスでNone
     println!("{:?}", v2.get(0));
     println!("{:?}", v2.get(0).unwrap());
+
+    let mut v3 = vec!["Rust", "Python", "Java"];
+    v3.push("PHP");
+    println!("{:?}", v3);
+    let val = v3.pop();
+    println!("{:?}", val);
+    println!("{:?}", v3);
 }
