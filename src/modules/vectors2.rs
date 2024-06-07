@@ -51,6 +51,8 @@ fn vectors2() {
 
     let x = v8.iter().position(|x| *x == 6);
     let y = v8.iter().position(|x| *x == 5);
+    let z = v8.iter().position(|x| *x == 7);
     println!("{:?}", x);
     println!("{:?}", y);
+    println!("{:?}", z);
 }
