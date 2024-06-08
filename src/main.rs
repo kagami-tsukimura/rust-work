@@ -37,7 +37,8 @@ mod modules {
     // pub mod outfiles;
     // pub mod opens;
     // pub mod jsons;
-    pub mod paths;
+    // pub mod paths;
+    pub mod file_systems;
 }
 
 mod tests {
@@ -92,7 +93,8 @@ fn main() {
     // modules::outfiles::main();
     // modules::opens::main();
     // modules::jsons::main();
-    modules::paths::main();
+    // modules::paths::main();
+    modules::file_systems::main();
 }
 
 // fn need_even(a: i32) -> Result<i32, String> {
