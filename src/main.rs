@@ -34,7 +34,8 @@ mod modules {
 }
 
 mod tests {
-    pub mod unit_tests;
+    // pub mod unit_tests;
+    pub mod panic_test;
 }
 
 fn main() {
@@ -74,7 +75,9 @@ fn main() {
     // modules::queues::main();
     // modules::maps::main();
     // modules::sets::main();
-    tests::unit_tests::main();
+
+    // tests::unit_tests::main();
+    tests::panic_test::main();
 }
 
 // fn need_even(a: i32) -> Result<i32, String> {
