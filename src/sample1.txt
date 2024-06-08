@@ -1,5 +1,0 @@
-Rust
-Python
-Java
-C
-C++
