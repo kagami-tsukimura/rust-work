@@ -26,14 +26,24 @@ fn infiles() {
 
     let f2 = File::open(file_path).expect("file not found");
     let mut buf_reader = BufReader::new(f2);
-    // let mut line = String::new();
-    // buf_reader.read_line(&mut line).unwrap();
-    // println!("{}", line);
-    // buf_reader.read_line(&mut line).unwrap();
-    // println!("{}", line);
+    let mut line = String::new();
+    buf_reader.read_line(&mut line).unwrap();
+    println!("{}", line);
+    buf_reader.read_line(&mut line).unwrap();
+    println!("{}", line);
+
+    println!("-----");
 
     let lines = buf_reader.lines();
     for line in lines {
         println!("{}", line.unwrap());
     }
+
+    println!("-----");
+
+    let mut f3 = File::open(file_path).expect("file not found");
+    let mut bytes = Vec::new();
+    f3.read_to_end(&mut bytes).unwrap();
+    println!("{:?}", bytes);
+    println!("{:?}", String::from_utf8(bytes).unwrap());
 }
