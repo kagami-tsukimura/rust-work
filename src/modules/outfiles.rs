@@ -13,5 +13,9 @@ fn outfiles() {
 
     f1.write_all(bytes).unwrap();
 
+    let path2 = "output_sample2.txt";
+    let mut f2 = File::create(path2).unwrap();
+    writeln!(f2, "Hello, {}", "Rust").unwrap();
+
     println!("-----");
 }
