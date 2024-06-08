@@ -1,3 +1,4 @@
+use rust_work::services;
 use std::io;
 
 pub fn main() {
@@ -11,6 +12,7 @@ fn expense() {
     // String → u8にparse
     let service_type: u8 = service_type.trim().parse().expect("数値を入力してください");
     // 入力値のバリデーション
+    services::validate::InputValidator::validate_service_type(service_type);
 
     // 0: 登録 1: 集計
     if service_type == 0 {
