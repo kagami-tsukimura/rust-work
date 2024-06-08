@@ -24,4 +24,6 @@ fn queues() {
     bh.push(20);
     bh.push(2);
     println!("{:?}", bh);
+    println!("{:?}", bh.pop());
+    println!("{:?}", bh);
 }
