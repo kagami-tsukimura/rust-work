@@ -17,4 +17,6 @@ fn paths() {
     println!("path_buf: {:?}", path_buf);
     path_buf.set_file_name("path.txt");
     println!("path_buf: {:?}", path_buf);
+    path_buf.pop();
+    println!("path_buf: {:?}", path_buf);
 }
