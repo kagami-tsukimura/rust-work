@@ -6,6 +6,8 @@ pub fn main() {
 
 fn sets() {
     let mut s = HashSet::new();
+    // 重複はしない
+    s.insert(1);
     s.insert(1);
     s.insert(1);
     s.insert(2);
