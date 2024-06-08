@@ -1,6 +1,6 @@
 fn maybe_panic(flag: bool) {
     if flag {
-        panic!("ハンドリング");
+        panic!("flag is true!!!");
     }
     println!("Safe!");
     // do something...
@@ -8,7 +8,7 @@ fn maybe_panic(flag: bool) {
 }
 
 #[test]
-#[should_panic(expected = "ハンドリング")]
+#[should_panic(expected = "flag is true")]
 fn test_maybe_panic() {
     maybe_panic(false);
     maybe_panic(true);
