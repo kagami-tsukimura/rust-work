@@ -10,6 +10,7 @@ fn maybe_panic(flag: bool) {
     panic!("unexpected!");
 }
 
+#[cfg(test)]
 mod test_module {
     #[test]
     #[should_panic(expected = "flag is true")]
