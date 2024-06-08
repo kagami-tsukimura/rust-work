@@ -26,7 +26,8 @@ mod test_module {
     }
 
     #[test]
-    #[ignore]
+    // // ignore: テストを無視
+    // #[ignore]
     fn test_calc_diff() {
         assert_eq!(1 - 1, 0);
     }
