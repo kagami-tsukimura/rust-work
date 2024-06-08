@@ -10,11 +10,13 @@ fn maybe_panic(flag: bool) {
     panic!("unexpected!");
 }
 
-#[test]
-#[should_panic(expected = "flag is true")]
-fn test_maybe_panic() {
-    // maybe_panic(false);
-    maybe_panic(true);
+mod test_module {
+    #[test]
+    #[should_panic(expected = "flag is true")]
+    fn test_maybe_panic() {
+        // maybe_panic(false);
+        super::maybe_panic(true);
+    }
 }
 
 pub fn main() {}
