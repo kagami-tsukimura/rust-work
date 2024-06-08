@@ -18,6 +18,16 @@ mod test_module {
         // maybe_panic(false);
         super::maybe_panic(true);
     }
+
+    #[test]
+    fn test_calc_add() {
+        assert_eq!(1 + 1, 2);
+    }
+
+    #[test]
+    fn test_calc_diff() {
+        assert_eq!(1 - 1, 0);
+    }
 }
 
 pub fn main() {}
