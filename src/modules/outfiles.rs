@@ -1,5 +1,3 @@
-use std::fs::File;
-
 pub fn main() {
     outfiles();
 }
