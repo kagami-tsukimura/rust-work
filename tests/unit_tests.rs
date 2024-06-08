@@ -1,4 +1,4 @@
-// #[test]
+#[test]
 // cargo test main.rs
 
 pub fn main() {
@@ -13,4 +13,5 @@ fn test_sample() {
     assert_eq!(a, b);
     assert_ne!(a, c);
     assert!(c == 4);
+    assert!(c == 2);
 }

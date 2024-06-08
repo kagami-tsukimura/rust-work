@@ -29,8 +29,7 @@ mod modules {
     // pub mod vectors2;
     // pub mod queues;
     // pub mod maps;
-    // pub mod sets;
-    pub mod tests;
+    pub mod sets;
 }
 
 fn main() {
@@ -69,8 +68,7 @@ fn main() {
     // modules::vectors2::main();
     // modules::queues::main();
     // modules::maps::main();
-    // modules::sets::main();
-    modules::tests::main();
+    modules::sets::main();
 }
 
 // fn need_even(a: i32) -> Result<i32, String> {
