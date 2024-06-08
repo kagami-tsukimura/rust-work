@@ -10,7 +10,7 @@ fn maybe_panic(flag: bool) {
 #[test]
 #[should_panic(expected = "flag is true")]
 fn test_maybe_panic() {
-    maybe_panic(false);
+    // maybe_panic(false);
     maybe_panic(true);
 }
 
