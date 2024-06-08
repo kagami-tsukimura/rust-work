@@ -1,4 +1,4 @@
-use std::collections::VecDeque;
+use std::collections::{BinaryHeap, VecDeque};
 
 pub fn main() {
     queues();
@@ -17,4 +17,11 @@ fn queues() {
     println!("{:?}", q.pop_front());
     println!("{:?}", q.pop_front());
     println!("{:?}", q);
+
+    let mut bh = BinaryHeap::new();
+    bh.push(1);
+    bh.push(10);
+    bh.push(20);
+    bh.push(2);
+    println!("{:?}", bh);
 }
