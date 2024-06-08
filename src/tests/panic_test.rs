@@ -3,6 +3,8 @@ fn maybe_panic(flag: bool) {
         panic!("ハンドリング");
     }
     println!("Safe!");
+    // do something...
+    panic!("unexpected!");
 }
 
 #[test]
