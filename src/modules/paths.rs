@@ -12,7 +12,9 @@ fn paths() {
     println!("file_name: {:?}", path.file_name());
 
     let mut path_buf = PathBuf::from("src");
-    path_buf.push("sample1.txt");
+    // path_buf.push("sample1.txt");
     path_buf.push("main.rs");
+    println!("path_buf: {:?}", path_buf);
+    path_buf.set_file_name("path.txt");
     println!("path_buf: {:?}", path_buf);
 }
