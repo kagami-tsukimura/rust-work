@@ -30,5 +30,5 @@ fn sets() {
     let s3 = &s1 | &s2;
     println!("set1: {:?}", s1);
     println!("set2: {:?}", s2);
-    println!("set3(set1 + set2): {:?}", s3);
+    println!("set3(set1 & set2): {:?}", s3);
 }
