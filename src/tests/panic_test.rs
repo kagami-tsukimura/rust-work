@@ -10,7 +10,7 @@ fn maybe_panic(flag: bool) {
     panic!("unexpected!");
 }
 
-// cargo test <テスト関数名>: 特定のテスト関数を実行
+// cargo test <テスト関数名（部分一致）>: 特定のテスト関数を実行
 #[cfg(test)]
 mod test_module {
     #[test]
