@@ -7,10 +7,11 @@ pub fn main() {
 fn file_systems() {
     let dir1 = "src/test1";
     let dir2 = "src/test2/test2-1/test2-2";
+    let dir3 = "src/test2/";
 
-    // fs::create_dir(dir1).unwrap();
-    // fs::create_dir_all(dir2).unwrap();
+    fs::create_dir(dir1).unwrap();
+    fs::create_dir_all(dir2).unwrap();
 
     fs::remove_dir(dir1).unwrap();
-    fs::remove_dir_all(dir2).unwrap();
+    fs::remove_dir_all(dir3).unwrap();
 }
