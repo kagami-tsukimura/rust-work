@@ -29,7 +29,13 @@ mod modules {
     // pub mod vectors2;
     // pub mod queues;
     // pub mod maps;
-    pub mod sets;
+    // pub mod sets;
+    // pub mod unit_tests;
+}
+
+mod tests {
+    // pub mod unit_tests;
+    pub mod panic_test;
 }
 
 fn main() {
@@ -68,7 +74,10 @@ fn main() {
     // modules::vectors2::main();
     // modules::queues::main();
     // modules::maps::main();
-    modules::sets::main();
+    // modules::sets::main();
+
+    // tests::unit_tests::main();
+    tests::panic_test::main();
 }
 
 // fn need_even(a: i32) -> Result<i32, String> {
