@@ -1,6 +1,7 @@
 use serde::{Deserialize, Serialize};
 use std::fs::File;
 use std::io::prelude::*;
+use std::io::BufReader;
 
 #[derive(Serialize, Deserialize, Debug)]
 struct Person {
@@ -25,4 +26,9 @@ fn jsons() {
     let file_path = "sample.json";
     let mut f = File::create(file_path).unwrap();
     writeln!(f, "{}", json_data).unwrap();
+
+    let f = File::open(file_path).unwrap();
+    let buf_reader = BufReader::new(f);
+    let person: Person = serde_json::from_reader(buf_reader).unwrap();
+    println!("{:?}", person);
 }
