@@ -12,6 +12,8 @@ fn maps() {
     m.insert("India", 1);
     println!("{:?}", m);
 
+    println!("-----");
+
     m.insert("Japan", 10);
     println!("{:?}", m);
 
@@ -19,6 +21,8 @@ fn maps() {
     println!("{:?}", m.get("Japan").unwrap());
     println!("{:?}", m.remove("India"));
     println!("{:?}", m);
+
+    println!("-----");
 
     for (k, v) in &m {
         println!("{:?} {:?}", k, v);
