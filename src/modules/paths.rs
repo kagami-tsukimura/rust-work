@@ -9,4 +9,5 @@ fn paths() {
     println!("path_exist: {:?}", path.exists());
     println!("is_dir: {:?}", path.is_dir());
     println!("is_file: {:?}", path.is_file());
+    println!("file_name: {:?}", path.file_name());
 }
