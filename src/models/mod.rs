@@ -13,3 +13,8 @@ pub enum ExpenseCategory {
     Hobby,
     Other,
 }
+
+pub enum Category {
+    Income(IncomeCategory),
+    Expense(ExpenseCategory),
+}
