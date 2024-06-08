@@ -68,6 +68,8 @@ fn say_bye() {
 
 /// Add two numbers
 ///
+/// command: cargo test
+///
 /// ```
 /// let result = rust_work::add(1, 2);
 /// assert_eq!(result, 3);
