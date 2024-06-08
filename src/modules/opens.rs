@@ -12,6 +12,8 @@ fn opens() {
         .open(file_path1)
         .unwrap();
 
+    println!("f1: {:?}", f1);
+
     let file_path2 = "sample2.txt";
     let f2 = OpenOptions::new()
         // 上書き
@@ -20,4 +22,6 @@ fn opens() {
         .create_new(true)
         .open(file_path2)
         .unwrap();
+
+    println!("f2: {:?}", f2);
 }
