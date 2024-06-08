@@ -5,5 +5,8 @@ pub fn main() {
 }
 
 fn paths() {
-    println!("-----");
+    let path = Path::new("src");
+    println!("path_exist: {:?}", path.exists());
+    println!("is_dir: {:?}", path.is_dir());
+    println!("is_file: {:?}", path.is_file());
 }
