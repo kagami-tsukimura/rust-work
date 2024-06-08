@@ -10,5 +10,8 @@ fn outfiles() {
     let mut f1 = File::create(path1).unwrap();
     let bytes = b"write example!\n";
     println!("{:?}", bytes);
+
+    f1.write(bytes).unwrap();
+
     println!("-----");
 }
