@@ -14,4 +14,7 @@ fn maps() {
 
     m.insert("Japan", 10);
     println!("{:?}", m);
+
+    println!("{:?}", m.get("Japan"));
+    println!("{:?}", m.get("Japan").unwrap());
 }
