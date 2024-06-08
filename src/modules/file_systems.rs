@@ -12,13 +12,16 @@ fn file_systems() {
     let file1 = "src/sample1.txt";
     let file2 = "src/sample2.txt";
     let file3 = "src/sample3.txt";
+    let mvfile = "src/test1/sample3.txt";
 
     fs::create_dir(dir1).unwrap();
-    fs::create_dir_all(dir2).unwrap();
+    // fs::create_dir_all(dir2).unwrap();
 
-    fs::remove_dir(dir1).unwrap();
-    fs::remove_dir_all(dir3).unwrap();
+    // fs::remove_dir(dir1).unwrap();
+    // fs::remove_dir_all(dir3).unwrap();
 
-    // fs::remove_file(file1).unwrap();
-    fs::copy(file2, file3).unwrap();
+    // // fs::remove_file(file1).unwrap();
+    // fs::copy(file2, file3).unwrap();
+
+    fs::rename(file3, mvfile).unwrap();
 }
