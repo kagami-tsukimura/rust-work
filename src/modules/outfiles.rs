@@ -8,5 +8,7 @@ pub fn main() {
 fn outfiles() {
     let path1 = "output_sample1.txt";
     let mut f1 = File::create(path1).unwrap();
+    let bytes = b"write example!\n";
+    println!("{:?}", bytes);
     println!("-----");
 }
