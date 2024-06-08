@@ -1,3 +1,4 @@
+#[cfg(test)]
 #[test]
 // cargo test main.rs
 fn test_eq() {
@@ -6,6 +7,7 @@ fn test_eq() {
 
     assert_eq!(a, b);
 }
+#[cfg(test)]
 #[test]
 fn test_ne() {
     let a = 1 + 1;
@@ -13,6 +15,7 @@ fn test_ne() {
 
     assert_ne!(a, c);
 }
+#[cfg(test)]
 #[test]
 fn test_vanilla() {
     let c = 2 + 2;
@@ -20,6 +23,7 @@ fn test_vanilla() {
     assert!(c == 4);
 }
 
+#[cfg(test)]
 // #[test]
 // fn test_err() {
 //     let c = 2 + 2;
