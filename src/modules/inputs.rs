@@ -12,6 +12,6 @@ fn inputs() {
         .expect("Failed to read line");
     println!("You typed: {}", input);
 
-    let num: i32 = input.trim().parse().unwrap();
+    let num: i32 = input.trim().parse().expect("Not adapted to the i32 type!");
     println!("num: {}", num);
 }
