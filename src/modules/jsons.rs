@@ -1,3 +1,12 @@
+use serde::{Deserialize, Serialize};
+
+#[derive(Serialize, Deserialize, Debug)]
+struct Person {
+    name: String,
+    age: u8,
+    phones: Vec<String>,
+}
+
 pub fn main() {
     jsons();
 }
