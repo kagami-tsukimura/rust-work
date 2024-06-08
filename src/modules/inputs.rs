@@ -11,4 +11,7 @@ fn inputs() {
         .read_line(&mut input)
         .expect("Failed to read line");
     println!("You typed: {}", input);
+
+    let num: i32 = input.trim().parse().unwrap();
+    println!("num: {}", num);
 }
