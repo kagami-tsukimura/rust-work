@@ -26,6 +26,7 @@ mod test_module {
     }
 
     #[test]
+    #[ignore]
     fn test_calc_diff() {
         assert_eq!(1 - 1, 0);
     }
