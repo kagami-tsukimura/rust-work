@@ -8,10 +8,10 @@ fn maybe_panic(flag: bool) {
 }
 
 #[test]
-#[should_panic]
+#[should_panic(expected = "ハンドリング")]
 fn test_maybe_panic() {
     maybe_panic(false);
-    // maybe_panic(true);
+    maybe_panic(true);
 }
 
 pub fn main() {}
