@@ -33,7 +33,8 @@ mod modules {
     // pub mod unit_tests;
     // pub mod args;
     // pub mod inputs;
-    pub mod infiles;
+    // pub mod infiles;
+    pub mod outfiles;
 }
 
 mod tests {
@@ -84,7 +85,8 @@ fn main() {
 
     // modules::args::main();
     // modules::inputs::main();
-    modules::infiles::main();
+    // modules::infiles::main();
+    modules::outfiles::main();
 }
 
 // fn need_even(a: i32) -> Result<i32, String> {
