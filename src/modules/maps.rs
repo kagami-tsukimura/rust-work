@@ -17,4 +17,6 @@ fn maps() {
 
     println!("{:?}", m.get("Japan"));
     println!("{:?}", m.get("Japan").unwrap());
+    println!("{:?}", m.remove("India"));
+    println!("{:?}", m);
 }
