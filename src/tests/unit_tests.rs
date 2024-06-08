@@ -20,4 +20,11 @@ fn test_vanilla() {
     assert!(c == 4);
 }
 
+// #[test]
+// fn test_err() {
+//     let c = 2 + 2;
+
+//     assert!(c == 2);
+// }
+
 pub fn main() {}
