@@ -11,8 +11,10 @@ fn queues() {
     q.push_back(1);
     q.push_back(2);
     q.push_back(3);
+    q.push_back(4);
     println!("{:?}", q);
 
-    q.pop_front();
+    println!("{:?}", q.pop_front());
+    println!("{:?}", q.pop_front());
     println!("{:?}", q);
 }
