@@ -1,3 +1,6 @@
+// cargo test -- --test-threads=1: シングルスレッド実行
+// default: マルチスレッド実行
+
 fn maybe_panic(flag: bool) {
     if flag {
         panic!("flag is true!!!");
