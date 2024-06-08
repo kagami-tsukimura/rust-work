@@ -10,4 +10,11 @@ fn expense() {
     io::stdin().read_line(&mut service_type).unwrap();
     // String → u8にparse
     let service_type: u8 = service_type.trim().parse().expect("数値を入力してください");
+    // 入力値のバリデーション
+
+    if service_type == 0 {
+        println!("登録");
+    } else if service_type == 1 {
+        println!("集計");
+    }
 }
