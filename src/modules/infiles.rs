@@ -8,8 +8,8 @@ pub fn main() {
 fn infiles() {
     let mut f = File::open("./sample1.txt").expect("file not found");
 
-    let mut s = String::new();
-    f.read_to_string(&mut s)
+    let mut conetnts = String::new();
+    f.read_to_string(&mut conetnts)
         .expect("something went wrong reading the file");
-    println!("{}", s);
+    println!("{}", conetnts);
 }
