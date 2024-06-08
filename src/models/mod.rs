@@ -6,3 +6,10 @@ pub enum IncomeCategory {
     Bonus,
     Other,
 }
+
+#[derive(Serialize, Deserialize, Debug, PartialEq, Eq)]
+pub enum ExpenseCategory {
+    Food,
+    Hobby,
+    Other,
+}
