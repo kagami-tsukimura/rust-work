@@ -10,4 +10,9 @@ fn paths() {
     println!("is_dir: {:?}", path.is_dir());
     println!("is_file: {:?}", path.is_file());
     println!("file_name: {:?}", path.file_name());
+
+    let mut path_buf = PathBuf::from("src");
+    path_buf.push("sample1.txt");
+    path_buf.push("main.rs");
+    println!("path_buf: {:?}", path_buf);
 }
