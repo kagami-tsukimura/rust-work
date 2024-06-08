@@ -12,14 +12,11 @@ pub fn main() {
 }
 
 fn jsons() {
-    let json = r#"
-    {
-        "name": "John Doe",
-        "age": 43,
-        "phones": [
-            "+44 1234567",
-            "+44 2345678"
-        ]
-    }"#;
-    println!("{}", json);
+    let p = Person {
+        name: String::from("Kagami Tsukimura"),
+        age: 28,
+        phones: vec![String::from("080-1234-5678"), String::from("090-1234-5678")],
+    };
+    let json_date = serde_json::to_string_pretty(&p).unwrap();
+    println!("{}", json_date);
 }
