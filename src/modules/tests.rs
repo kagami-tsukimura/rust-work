@@ -1,3 +1,6 @@
+// #[test]
+// cargo test main.rs
+
 pub fn main() {
     test_sample();
 }
