@@ -12,6 +12,7 @@ fn expense() {
     let service_type: u8 = service_type.trim().parse().expect("数値を入力してください");
     // 入力値のバリデーション
 
+    // 0: 登録 1: 集計
     if service_type == 0 {
         println!("登録");
     } else if service_type == 1 {
