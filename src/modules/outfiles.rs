@@ -11,7 +11,7 @@ fn outfiles() {
     let bytes = b"write example!\n";
     println!("{:?}", bytes);
 
-    f1.write(bytes).unwrap();
+    f1.write_all(bytes).unwrap();
 
     println!("-----");
 }
