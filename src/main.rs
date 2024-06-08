@@ -31,7 +31,8 @@ mod modules {
     // pub mod maps;
     // pub mod sets;
     // pub mod unit_tests;
-    pub mod args;
+    // pub mod args;
+    pub mod inputs;
 }
 
 mod tests {
@@ -80,7 +81,8 @@ fn main() {
     // tests::unit_tests::main();
     // tests::panic_test::main();
 
-    modules::args::main();
+    // modules::args::main();
+    modules::inputs::main();
 }
 
 // fn need_even(a: i32) -> Result<i32, String> {
