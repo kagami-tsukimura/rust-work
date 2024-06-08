@@ -32,18 +32,24 @@ fn sets() {
     println!("set2: {:?}", s2);
     println!("set3(set1 & set2): {:?}", s3);
 
+    println!("-----");
+
     let s4 = &s1 & &s2;
     println!("set1: {:?}", s1);
     println!("set2: {:?}", s2);
     println!("set4(set1 & set2): {:?}", s4);
 
-    // let s5 = &s1 - &s2;
-    // println!("set1: {:?}", s1);
-    // println!("set2: {:?}", s2);
-    // println!("set5(set1 - set2): {:?}", s5);
+    println!("-----");
 
-    // let s6 = &s1 ^ &s2;
-    // println!("set1: {:?}", s1);
-    // println!("set2: {:?}", s2);
-    // println!("set6(set1 ^ set2): {:?}", s6);
+    let s5 = &s1 - &s2;
+    println!("set1: {:?}", s1);
+    println!("set2: {:?}", s2);
+    println!("set5(set1 - set2): {:?}", s5);
+
+    println!("-----");
+
+    let s6 = &s1 ^ &s2;
+    println!("set1: {:?}", s1);
+    println!("set2: {:?}", s2);
+    println!("set6(set1 ^ set2): {:?}", s6);
 }
