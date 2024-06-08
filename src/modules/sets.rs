@@ -12,6 +12,6 @@ fn sets() {
     s.insert(1);
     s.insert(2);
     s.insert(3);
-    // 順序はランダム
+    // HashSet: 順序はランダム
     println!("{:?}", s);
 }
