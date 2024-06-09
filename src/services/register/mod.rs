@@ -14,6 +14,11 @@ pub fn run(file_path: &str) {
     let category = models::Item::get_category(register_type, caregory_type);
 
     let item = models::Item::new(name, category, price, date);
+    println!("{:?}", &item);
+
+    let mut data = services::io::read_data_or_create_new_data(file_path);
+    data.push(item);
+    services::io::write_to_json(&data, file_path);
 }
 
 fn input_register_type() -> u8 {
