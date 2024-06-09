@@ -40,4 +40,6 @@ fn input_category_type(register_type: u8) -> u8 {
         .trim()
         .parse()
         .expect("カテゴリは数値を入力してください");
+    services::validate::InputValidator::validate_category_type(register_type, category);
+    category
 }
