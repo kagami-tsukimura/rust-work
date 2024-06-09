@@ -32,14 +32,23 @@ fn input_category_type(register_type: u8) -> u8 {
     } else if register_type == 1 {
         println!("0:食費, 1:趣味, 2:その他");
     }
-    let mut category = String::new();
+    let mut category_type = String::new();
     io::stdin()
-        .read_line(&mut category)
+        .read_line(&mut category_type)
         .expect("カテゴリ種別の入力に失敗しました");
-    let category: u8 = category
+    let category_type: u8 = category_type
         .trim()
         .parse()
         .expect("カテゴリは数値を入力してください");
-    services::validate::InputValidator::validate_category_type(register_type, category);
-    category
+    services::validate::InputValidator::validate_category_type(register_type, category_type);
+    category_type
+}
+
+fn input_price() -> u32 {
+    println!("金額を入力してください");
+    let mut price = String::new();
+    io::stdin()
+        .read_line(&mut price)
+        .expect("金額の入力に失敗しました");
+    price.trim().parse().expect("金額は数値を入力してください");
 }
