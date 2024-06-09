@@ -1,5 +1,7 @@
 use crate::services;
+use chrono::NaiveDate;
 use std::io;
+use std::str::FromStr;
 
 fn input_register_type() -> u8 {
     println!("登録種別を入力してください(0: 収入, 1: 支出)");
@@ -50,5 +52,12 @@ fn input_price() -> u32 {
     io::stdin()
         .read_line(&mut price)
         .expect("金額の入力に失敗しました");
-    price.trim().parse().expect("金額は数値を入力してください");
+    price.trim().parse().expect("金額は数値を入力してください")
+}
+
+fn input_date() -> NaiveDate {
+    println!("日付を入力してください(yyyy-mm-dd)");
+    let mut date = String::new();
+    io::stdin().read_line(&mut date).unwrap();
+    NaiveDate::from_str(&date).expect("日付は数値を入力してください")
 }
