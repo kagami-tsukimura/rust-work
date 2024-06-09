@@ -24,3 +24,20 @@ fn input_name() -> String {
         .expect("品目名の入力に失敗しました");
     name.trim().to_string()
 }
+
+fn input_category_type(register_type: u8) -> u8 {
+    println!("カテゴリを入力してください(0: 収入, 1: 支出)");
+    if register_type == 0 {
+        println!("(0:給与, 1:賞与, 2:その他)");
+    } else if register_type == 1 {
+        println!("0:食費, 1:趣味, 2:その他");
+    }
+    let mut category = String::new();
+    io::stdin()
+        .read_line(&mut category)
+        .expect("カテゴリ種別の入力に失敗しました");
+    let category: u8 = category
+        .trim()
+        .parse()
+        .expect("カテゴリは数値を入力してください");
+}
