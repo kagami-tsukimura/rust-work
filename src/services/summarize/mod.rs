@@ -75,13 +75,13 @@ mod summarize_test {
             ),
             models::Item::new(
                 "新年会".to_string(),
-                models::Category::Expense(models::ExpenseCategory::Food),
+                models::Category::Expense(models::ExpenseCategory::Other),
                 6000,
                 NaiveDate::from_ymd_opt(2020, 1, 2).unwrap(),
             ),
             models::Item::new(
                 "旅費".to_string(),
-                models::Category::Expense(models::ExpenseCategory::Food),
+                models::Category::Expense(models::ExpenseCategory::Other),
                 30000,
                 NaiveDate::from_ymd_opt(2020, 2, 3).unwrap(),
             ),
@@ -93,9 +93,7 @@ mod summarize_test {
         let test_data = get_test_data();
         let mut expected = BTreeSet::new();
         expected.insert(NaiveDate::from_ymd_opt(2020, 1, 1).unwrap());
-        expected.insert(NaiveDate::from_ymd_opt(2020, 1, 2).unwrap());
-        expected.insert(NaiveDate::from_ymd_opt(2020, 2, 3).unwrap());
-        let actual = get_target_dates(&test_data);
-        assert_eq!(expected, actual);
+        expected.insert(NaiveDate::from_ymd_opt(2020, 2, 1).unwrap());
+        assert_eq!(get_target_dates(&test_data), expected);
     }
 }
