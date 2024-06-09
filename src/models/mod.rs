@@ -60,4 +60,12 @@ impl Item {
     pub fn get_year(&self) -> i32 {
         self.date.year()
     }
+
+    pub fn get_month(&self) -> u32 {
+        self.date.month()
+    }
+
+    pub fn get_day(&self) -> u32 {
+        self.date.day()
+    }
 }
