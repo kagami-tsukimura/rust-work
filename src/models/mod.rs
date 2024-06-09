@@ -28,3 +28,14 @@ pub struct Item {
     price: u32,
     date: NaiveDate,
 }
+
+impl Item {
+    pub fn new(name: String, category: Category, price: u32, date: NaiveDate) -> Self {
+        Item {
+            name,
+            category,
+            price,
+            date,
+        }
+    }
+}
