@@ -43,9 +43,17 @@ impl Item {
         if register_type == 0 {
             match category_type {
                 0 => Category::Income(IncomeCategory::Salary),
-                0 => Category::Income(IncomeCategory::Bonus),
-                0 => Category::Income(IncomeCategory::Other),
+                1 => Category::Income(IncomeCategory::Bonus),
+                2 => Category::Income(IncomeCategory::Other),
                 _ => panic!("不正なカテゴリ種別です。"),
+            }
+        } else {
+            match category_type {
+                0 => Category::Expense(ExpenseCategory::Food),
+                1 => Category::Expense(ExpenseCategory::Hobby),
+                2 => Category::Expense(ExpenseCategory::Other),
+                _ => panic!("不正なカテゴリ種別です。"),
+            }
+        }
     }
-}
 }
