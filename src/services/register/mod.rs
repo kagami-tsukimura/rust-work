@@ -1,3 +1,4 @@
+use crate::models;
 use crate::services::{self, register};
 use chrono::NaiveDate;
 use std::io;
@@ -10,6 +11,7 @@ pub fn run(file_path: &str) {
     let caregory_type = input_category_type(register_type);
     let price = input_price();
     let date = input_date();
+    let category = models::Item::get_category(register_type, caregory_type);
 }
 
 fn input_register_type() -> u8 {
