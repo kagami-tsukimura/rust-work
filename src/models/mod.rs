@@ -68,4 +68,11 @@ impl Item {
     pub fn get_first_day(&self) -> NaiveDate {
         NaiveDate::from_ymd_opt(self.get_year(), self.get_month(), 1).unwrap()
     }
+
+    pub fn get_price_for_summary(&self) -> i32 {
+        match self.category {
+            Category::Income(_) => self.price as i32,
+            Category::Expense(_) => -1 * self.price as i32,
+        }
+    }
 }
