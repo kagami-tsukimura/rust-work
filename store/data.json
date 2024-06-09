@@ -42,7 +42,7 @@
   {
     "name": "hoge",
     "category": {
-      "Income": "Other"
+      "Expense": "Other"
     },
     "price": 5000,
     "date": "2024-09-21"
