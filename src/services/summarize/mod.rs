@@ -24,3 +24,23 @@ fn summarize_data(data: &Vec<&models::Item>) -> i32 {
     }
     sum
 }
+
+fn format_date(date: NaiveDate) -> String {
+    format!("{}/{}", date.year(), date.month())
+}
+
+fn format_price(price: i32) -> String {
+    if price > 0 {
+        format!("+{}", price)
+    } else {
+        format!("{}", price)
+    }
+}
+
+fn print_table(result_table: BTreeMap<NaiveDate, i32>) {
+    for result in result_table {
+        let date = format_date(result.0);
+        let price = format_price(result.1);
+        println!("{}の収支は{}円でした", date, price);
+    }
+}
