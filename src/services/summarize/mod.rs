@@ -1,6 +1,12 @@
-use crate::models;
+use crate::{models, services};
 use chrono::{Datelike, NaiveDate};
 use std::collections::{BTreeMap, BTreeSet};
+
+pub fn run(file_path: &str) {
+    println!("家計簿の集計を行います");
+    let data = services::io::read_data_or_panic(file_path);
+    let target_dates = get_target_dates(&data);
+}
 
 fn get_target_dates(data: &Vec<models::Item>) -> BTreeSet<NaiveDate> {
     let target_dates: BTreeSet<_> = data.iter().map(|item| item.get_first_day()).collect();
