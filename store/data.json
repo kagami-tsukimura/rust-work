@@ -14,5 +14,13 @@
     },
     "price": 6000,
     "date": "2024-07-01"
+  },
+  {
+    "name": "hoge",
+    "category": {
+      "Income": "Other"
+    },
+    "price": 5000,
+    "date": "2024-07-21"
   }
 ]
