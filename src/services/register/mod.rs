@@ -12,6 +12,8 @@ pub fn run(file_path: &str) {
     let price = input_price();
     let date = input_date();
     let category = models::Item::get_category(register_type, caregory_type);
+
+    let item = models::Item::new(name, category, price, date);
 }
 
 fn input_register_type() -> u8 {
