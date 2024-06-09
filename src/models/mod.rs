@@ -1,4 +1,5 @@
 use serde::{Deserialize, Serialize};
+use chrono::NaiveDate
 
 #[derive(Serialize, Deserialize, Debug, PartialEq, Eq)]
 pub enum IncomeCategory {
@@ -14,7 +15,15 @@ pub enum ExpenseCategory {
     Other,
 }
 
+#[derive(Serialize, Deserialize, Debug, PartialEq, Eq)]
 pub enum Category {
     Income(IncomeCategory),
     Expense(ExpenseCategory),
+}
+
+pub struct Item {
+    name: String,
+    category: Category,
+    price: u32,
+    date: NaiveDate,
 }
