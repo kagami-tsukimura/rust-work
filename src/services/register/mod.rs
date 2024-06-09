@@ -1,3 +1,4 @@
+use crate::services;
 use std::io;
 
 fn input_register_type() -> u8 {
@@ -10,4 +11,7 @@ fn input_register_type() -> u8 {
         .trim()
         .parse()
         .expect("登録種別は数値を入力してください");
+
+    services::validate::InputValidator::validate_register_type(register_type);
+    register_type
 }
