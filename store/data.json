@@ -22,5 +22,29 @@
     },
     "price": 5000,
     "date": "2024-07-21"
+  },
+  {
+    "name": "8月給与",
+    "category": {
+      "Income": "Salary"
+    },
+    "price": 300000,
+    "date": "2024-08-15"
+  },
+  {
+    "name": "食事会",
+    "category": {
+      "Expense": "Food"
+    },
+    "price": 6000,
+    "date": "2024-09-01"
+  },
+  {
+    "name": "hoge",
+    "category": {
+      "Income": "Other"
+    },
+    "price": 5000,
+    "date": "2024-09-21"
   }
 ]
