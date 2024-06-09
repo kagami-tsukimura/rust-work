@@ -15,3 +15,12 @@ fn input_register_type() -> u8 {
     services::validate::InputValidator::validate_register_type(register_type);
     register_type
 }
+
+fn input_name() -> String {
+    println!("品目名を入力してください");
+    let mut name = String::new();
+    io::stdin()
+        .read_line(&mut name)
+        .expect("品目名の入力に失敗しました");
+    name.trim().to_string()
+}
