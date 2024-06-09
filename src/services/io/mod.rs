@@ -17,3 +17,14 @@ pub fn read_data_or_create_new_data(file_path: &str) -> Vec<models::Item> {
         }
     }
 }
+
+pub fn read_data_or_panic(file_path: &str) -> Vec<models::Item> {
+    let file = File::open(file_path).expect("ファイルを開けません");
+    let buf_reader = BufReader::new(file);
+    let data: Vec<_> = serde_json::from_reader(buf_reader).expect("デシリアライズに失敗しました");
+
+    if data.len() == 0 {
+        panic!("ファイルが空です");
+    }
+    data
+}
