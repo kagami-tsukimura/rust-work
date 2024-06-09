@@ -38,4 +38,14 @@ impl Item {
             date,
         }
     }
+
+    pub fn get_category(register_type: u8, category_type: u8) -> Category {
+        if register_type == 0 {
+            match category_type {
+                0 => Category::Income(IncomeCategory::Salary),
+                0 => Category::Income(IncomeCategory::Bonus),
+                0 => Category::Income(IncomeCategory::Other),
+                _ => panic!("不正なカテゴリ種別です。"),
+    }
+}
 }
