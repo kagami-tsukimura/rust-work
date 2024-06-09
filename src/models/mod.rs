@@ -1,4 +1,4 @@
-use chrono::NaiveDate;
+use chrono::{Datelike, NaiveDate};
 use serde::{Deserialize, Serialize};
 
 #[derive(Serialize, Deserialize, Debug, PartialEq, Eq)]
@@ -55,5 +55,9 @@ impl Item {
                 _ => panic!("不正なカテゴリ種別です。"),
             }
         }
+    }
+
+    pub fn get_year(&self) -> i32 {
+        self.date.year()
     }
 }
