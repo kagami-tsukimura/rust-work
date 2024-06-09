@@ -1,5 +1,5 @@
 use crate::models;
-use crate::services::{self, register};
+use crate::services;
 use chrono::NaiveDate;
 use std::io;
 use std::str::FromStr;
