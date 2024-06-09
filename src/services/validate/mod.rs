@@ -21,6 +21,11 @@ impl InputValidator {
                 0 | 1 | 2 => {}
                 _ => panic!("カテゴリの入力値が不正です。"),
             }
+        } else {
+            match category_type {
+                0 | 1 | 2 => {}
+                _ => panic!("カテゴリの入力値が不正です。"),
+            }
         }
     }
 }
