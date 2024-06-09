@@ -1,7 +1,16 @@
-use crate::services;
+use crate::services::{self, register};
 use chrono::NaiveDate;
 use std::io;
 use std::str::FromStr;
+
+pub fn run(file_path: &str) {
+    println!("収支の登録を行います");
+    let register_type = input_register_type();
+    let name = input_name();
+    let caregory_type = input_category_type(register_type);
+    let price = input_price();
+    let date = input_date();
+}
 
 fn input_register_type() -> u8 {
     println!("登録種別を入力してください(0: 収入, 1: 支出)");
