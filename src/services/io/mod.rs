@@ -33,5 +33,5 @@ pub fn write_to_json(data: &Vec<models::Item>, file_path: &str) {
     let json_data = serde_json::to_string_pretty(data).expect("JSONへのシリアライズに失敗しました");
     let mut file = File::create(file_path).expect("ファイルへの書き込みに失敗しました");
     writeln!(file, "{}", json_data).expect("ファイルへの書き込みに失敗しました");
-    println!("項目の登録が完了しました");
+    println!("項目の登録が完了しました!");
 }
