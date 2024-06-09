@@ -14,6 +14,8 @@ pub fn run(file_path: &str) {
         let sum = summarize_data(&filtered_data);
         result_table.insert(date, sum);
     }
+
+    print_table(result_table);
 }
 
 fn get_target_dates(data: &Vec<models::Item>) -> BTreeSet<NaiveDate> {
