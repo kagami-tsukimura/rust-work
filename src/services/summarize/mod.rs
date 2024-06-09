@@ -5,7 +5,15 @@ use std::collections::{BTreeMap, BTreeSet};
 pub fn run(file_path: &str) {
     println!("家計簿の集計を行います");
     let data = services::io::read_data_or_panic(file_path);
+
     let target_dates = get_target_dates(&data);
+    let mut result_table: BTreeMap<NaiveDate, i32> = BTreeMap::new();
+
+    for date in target_dates {
+        let filtered_data = get_filtered_data(&data, date);
+        let sum = summarize_data(&filtered_data);
+        result_table.insert(date, sum);
+    }
 }
 
 fn get_target_dates(data: &Vec<models::Item>) -> BTreeSet<NaiveDate> {
