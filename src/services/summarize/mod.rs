@@ -16,3 +16,11 @@ fn get_filtered_data(data: &Vec<models::Item>, filter_date: NaiveDate) -> Vec<&m
         .collect();
     filtered_data
 }
+
+fn summarize_data(data: &Vec<&models::Item>) -> i32 {
+    let mut sum = 0;
+    for item in data {
+        sum += item.get_price_for_summary();
+    }
+    sum
+}
