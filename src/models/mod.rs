@@ -65,7 +65,7 @@ impl Item {
         self.date.month()
     }
 
-    pub fn get_day(&self) -> u32 {
-        self.date.day()
+    pub fn get_first_day(&self) -> NaiveDate {
+        NaiveDate::from_ymd_opt(self.get_year(), self.get_month(), 1).unwrap()
     }
 }
